@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -65,7 +66,6 @@ namespace App_RumahSakit
 
             txtPasienTerpilih.Text = "No. RM: " + noRMTerpilih + "   |   Nama: " + nama + "   |   Poli: " + poli;
 
-            // Reset form input tiap ganti pasien
             txtKeluhan.Clear();
             txtDiagnosa.Clear();
             txtBiayaKonsultasi.Clear();
@@ -92,11 +92,9 @@ namespace App_RumahSakit
 
             dgvResep.DataSource = dtResep;
 
-            // Sembunyikan kolom ID_Obat (internal aja)
             if (dgvResep.Columns.Contains("ID_Obat"))
                 dgvResep.Columns["ID_Obat"].Visible = false;
 
-            // Tambah kolom tombol "Hapus" di grid resep kalau belum ada
             if (!dgvResep.Columns.Contains("Aksi"))
             {
                 DataGridViewButtonColumn btnHapus = new DataGridViewButtonColumn();
@@ -211,29 +209,27 @@ namespace App_RumahSakit
             {
                 string keluhan = Escape(txtKeluhan.Text.Trim());
                 string diagnosa = Escape(txtDiagnosa.Text.Trim());
+                string biayaKonsultasiStr = biayaKonsultasi.ToString(CultureInfo.InvariantCulture);
 
-                // 1. Insert ke Pemeriksaan
                 string insertPeriksa = "INSERT INTO Pemeriksaan (ID_Kunjungan, Keluhan, Diagnosa, BiayaKonsultasi) " +
-                    "VALUES (" + idKunjunganTerpilih + ", '" + keluhan + "', '" + diagnosa + "', " + biayaKonsultasi + ")";
+                    "VALUES (" + idKunjunganTerpilih + ", '" + keluhan + "', '" + diagnosa + "', " + biayaKonsultasiStr + ")";
                 DB.crud(insertPeriksa);
 
-                // 2. Ambil ID_Periksa yang baru saja dibuat
                 DB.crud("SELECT MAX(ID_Periksa) AS ID FROM Pemeriksaan WHERE ID_Kunjungan = " + idKunjunganTerpilih);
                 int idPeriksa = Convert.ToInt32(DB.ds.Tables[0].Rows[0]["ID"]);
 
-                // 3. Insert semua obat di keranjang resep ke DetailResep
                 foreach (DataRow row in dtResep.Rows)
                 {
                     int idObat = Convert.ToInt32(row["ID_Obat"]);   
                     int jumlah = Convert.ToInt32(row["Jumlah"]);
                     decimal subtotal = Convert.ToDecimal(row["Subtotal"]);
+                    string subtotalStr = subtotal.ToString(CultureInfo.InvariantCulture);
 
                     string insertResep = "INSERT INTO DetailResep (ID_Periksa, ID_Obat, JumlahObat, Subtotal, StatusResep) " +
-                        "VALUES (" + idPeriksa + ", " + idObat + ", " + jumlah + ", " + subtotal + ", 'Menunggu')";
+                        "VALUES (" + idPeriksa + ", " + idObat + ", " + jumlah + ", " + subtotalStr + ", 'Menunggu')";
                     DB.crud(insertResep);
                 }
 
-                // 4. Update status kunjungan jadi "Diperiksa"
                 string updateStatus = "UPDATE Kunjungan SET Status = 'Diperiksa' WHERE ID_Kunjungan = " + idKunjunganTerpilih;
                 DB.crud(updateStatus);
 

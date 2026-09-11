@@ -73,7 +73,6 @@ namespace App_RumahSakit
             // 
             // btnPemeriksaan
             // 
-            this.btnPemeriksaan.BorderThickness = 1;
             this.btnPemeriksaan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPemeriksaan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPemeriksaan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
