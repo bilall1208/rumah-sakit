@@ -49,7 +49,6 @@ namespace App_RumahSakit
             DB.crud(query);
             dgvAntrian.DataSource = DB.ds.Tables[0];
 
-            // Sembunyikan kolom No_RM (dipakai internal, gak perlu tampil)
             if (dgvAntrian.Columns.Contains("No_RM"))
                 dgvAntrian.Columns["No_RM"].Visible = false;
         }
