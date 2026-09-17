@@ -29,9 +29,9 @@ namespace App_RumahSakit
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pendaftaran));
             this.label8 = new System.Windows.Forms.Label();
             this.txtAlamat = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,15 +57,23 @@ namespace App_RumahSakit
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbDokter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.rbLakiLaki = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rbPerempuan = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnSimpanPerubahan = new Guna.UI2.WinForms.Guna2Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.guna2ShadowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(258, 202);
+            this.label8.Location = new System.Drawing.Point(258, 181);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 19);
             this.label8.TabIndex = 40;
@@ -83,13 +91,13 @@ namespace App_RumahSakit
             this.txtAlamat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAlamat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtAlamat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAlamat.Location = new System.Drawing.Point(40, 378);
+            this.txtAlamat.Location = new System.Drawing.Point(40, 416);
             this.txtAlamat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
-            this.txtAlamat.PlaceholderText = "";
+            this.txtAlamat.PlaceholderText = "Masukan alamat lengkap";
             this.txtAlamat.SelectedText = "";
-            this.txtAlamat.Size = new System.Drawing.Size(415, 128);
+            this.txtAlamat.Size = new System.Drawing.Size(415, 90);
             this.txtAlamat.TabIndex = 39;
             // 
             // guna2ShadowPanel1
@@ -148,27 +156,27 @@ namespace App_RumahSakit
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.guna2DataGridView1.ColumnHeadersHeight = 35;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
             this.guna2DataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.guna2DataGridView1.Location = new System.Drawing.Point(36, 125);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -212,17 +220,17 @@ namespace App_RumahSakit
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(46, 355);
+            this.label5.Location = new System.Drawing.Point(46, 393);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 19);
+            this.label5.Size = new System.Drawing.Size(61, 19);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Alamat Lengkap";
+            this.label5.Text = "Alamat";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 129);
+            this.label2.Location = new System.Drawing.Point(46, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 19);
             this.label2.TabIndex = 29;
@@ -240,10 +248,10 @@ namespace App_RumahSakit
             this.txtNL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNL.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtNL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNL.Location = new System.Drawing.Point(40, 152);
+            this.txtNL.Location = new System.Drawing.Point(40, 131);
             this.txtNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNL.Name = "txtNL";
-            this.txtNL.PlaceholderText = "";
+            this.txtNL.PlaceholderText = "Masukan nama lengkap";
             this.txtNL.SelectedText = "";
             this.txtNL.Size = new System.Drawing.Size(415, 36);
             this.txtNL.TabIndex = 28;
@@ -252,7 +260,7 @@ namespace App_RumahSakit
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 54);
+            this.label1.Location = new System.Drawing.Point(46, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 19);
             this.label1.TabIndex = 27;
@@ -262,7 +270,7 @@ namespace App_RumahSakit
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(46, 202);
+            this.label4.Location = new System.Drawing.Point(46, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 19);
             this.label4.TabIndex = 34;
@@ -280,10 +288,10 @@ namespace App_RumahSakit
             this.txtNIK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNIK.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtNIK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNIK.Location = new System.Drawing.Point(40, 225);
+            this.txtNIK.Location = new System.Drawing.Point(40, 204);
             this.txtNIK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNIK.Name = "txtNIK";
-            this.txtNIK.PlaceholderText = "";
+            this.txtNIK.PlaceholderText = "Masukan NIK";
             this.txtNIK.SelectedText = "";
             this.txtNIK.Size = new System.Drawing.Size(204, 36);
             this.txtNIK.TabIndex = 33;
@@ -300,10 +308,10 @@ namespace App_RumahSakit
             this.txtRM.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRM.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.txtRM.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRM.Location = new System.Drawing.Point(40, 77);
+            this.txtRM.Location = new System.Drawing.Point(40, 56);
             this.txtRM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRM.Name = "txtRM";
-            this.txtRM.PlaceholderText = "";
+            this.txtRM.PlaceholderText = "Contoh: RM0001";
             this.txtRM.SelectedText = "";
             this.txtRM.Size = new System.Drawing.Size(253, 36);
             this.txtRM.TabIndex = 26;
@@ -320,7 +328,7 @@ namespace App_RumahSakit
             this.dtpTTL.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTTL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.dtpTTL.HoverState.FillColor = System.Drawing.Color.White;
-            this.dtpTTL.Location = new System.Drawing.Point(251, 225);
+            this.dtpTTL.Location = new System.Drawing.Point(251, 204);
             this.dtpTTL.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpTTL.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpTTL.Name = "dtpTTL";
@@ -331,20 +339,20 @@ namespace App_RumahSakit
             // btnDaftar
             // 
             this.btnDaftar.BorderRadius = 4;
+            this.btnDaftar.BorderThickness = 1;
             this.btnDaftar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDaftar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDaftar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDaftar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDaftar.FillColor = System.Drawing.Color.Green;
+            this.btnDaftar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnDaftar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnDaftar.ForeColor = System.Drawing.Color.White;
-            this.btnDaftar.Image = ((System.Drawing.Image)(resources.GetObject("btnDaftar.Image")));
+            this.btnDaftar.ForeColor = System.Drawing.Color.Black;
             this.btnDaftar.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.btnDaftar.Location = new System.Drawing.Point(40, 534);
+            this.btnDaftar.Location = new System.Drawing.Point(226, 534);
             this.btnDaftar.Name = "btnDaftar";
-            this.btnDaftar.Size = new System.Drawing.Size(415, 36);
+            this.btnDaftar.Size = new System.Drawing.Size(229, 36);
             this.btnDaftar.TabIndex = 30;
-            this.btnDaftar.Text = "Daftar dan Antri";
+            this.btnDaftar.Text = "Daftar dan antri";
             this.btnDaftar.Click += new System.EventHandler(this.btnDaftar_Click);
             // 
             // btnCari
@@ -360,7 +368,7 @@ namespace App_RumahSakit
             this.btnCari.Image = global::App_RumahSakit.Properties.Resources.icons8_Search_50px_2;
             this.btnCari.ImageOffset = new System.Drawing.Point(-2, 0);
             this.btnCari.ImageSize = new System.Drawing.Size(19, 19);
-            this.btnCari.Location = new System.Drawing.Point(300, 77);
+            this.btnCari.Location = new System.Drawing.Point(300, 56);
             this.btnCari.Name = "btnCari";
             this.btnCari.Size = new System.Drawing.Size(89, 36);
             this.btnCari.TabIndex = 31;
@@ -397,7 +405,7 @@ namespace App_RumahSakit
             this.btnTambah.ForeColor = System.Drawing.Color.White;
             this.btnTambah.Image = ((System.Drawing.Image)(resources.GetObject("btnTambah.Image")));
             this.btnTambah.ImageSize = new System.Drawing.Size(23, 23);
-            this.btnTambah.Location = new System.Drawing.Point(395, 77);
+            this.btnTambah.Location = new System.Drawing.Point(395, 56);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(60, 36);
             this.btnTambah.TabIndex = 42;
@@ -414,7 +422,7 @@ namespace App_RumahSakit
             this.cmbPoli.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbPoli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbPoli.ItemHeight = 30;
-            this.cmbPoli.Location = new System.Drawing.Point(40, 299);
+            this.cmbPoli.Location = new System.Drawing.Point(40, 348);
             this.cmbPoli.Name = "cmbPoli";
             this.cmbPoli.Size = new System.Drawing.Size(204, 36);
             this.cmbPoli.TabIndex = 43;
@@ -423,7 +431,7 @@ namespace App_RumahSakit
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(46, 277);
+            this.label9.Location = new System.Drawing.Point(46, 326);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 19);
             this.label9.TabIndex = 44;
@@ -433,7 +441,7 @@ namespace App_RumahSakit
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(257, 277);
+            this.label10.Location = new System.Drawing.Point(257, 326);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 19);
             this.label10.TabIndex = 46;
@@ -450,16 +458,123 @@ namespace App_RumahSakit
             this.cmbDokter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbDokter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbDokter.ItemHeight = 30;
-            this.cmbDokter.Location = new System.Drawing.Point(251, 299);
+            this.cmbDokter.Location = new System.Drawing.Point(251, 348);
             this.cmbDokter.Name = "cmbDokter";
             this.cmbDokter.Size = new System.Drawing.Size(204, 36);
             this.cmbDokter.TabIndex = 45;
+            // 
+            // guna2ShadowPanel2
+            // 
+            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.label11);
+            this.guna2ShadowPanel2.Controls.Add(this.label6);
+            this.guna2ShadowPanel2.Controls.Add(this.rbPerempuan);
+            this.guna2ShadowPanel2.Controls.Add(this.rbLakiLaki);
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(40, 275);
+            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.Radius = 3;
+            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel2.ShadowDepth = 10;
+            this.guna2ShadowPanel2.ShadowShift = 0;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(415, 36);
+            this.guna2ShadowPanel2.TabIndex = 47;
+            // 
+            // rbLakiLaki
+            // 
+            this.rbLakiLaki.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbLakiLaki.CheckedState.BorderThickness = 2;
+            this.rbLakiLaki.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbLakiLaki.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbLakiLaki.CheckedState.InnerOffset = -4;
+            this.rbLakiLaki.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbLakiLaki.ForeColor = System.Drawing.Color.Black;
+            this.rbLakiLaki.Location = new System.Drawing.Point(15, 10);
+            this.rbLakiLaki.Name = "rbLakiLaki";
+            this.rbLakiLaki.Size = new System.Drawing.Size(15, 15);
+            this.rbLakiLaki.TabIndex = 0;
+            this.rbLakiLaki.Text = "Laki-laki";
+            this.rbLakiLaki.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbLakiLaki.UncheckedState.BorderThickness = 2;
+            this.rbLakiLaki.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbLakiLaki.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rbPerempuan
+            // 
+            this.rbPerempuan.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbPerempuan.CheckedState.BorderThickness = 2;
+            this.rbPerempuan.CheckedState.FillColor = System.Drawing.Color.White;
+            this.rbPerempuan.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbPerempuan.CheckedState.InnerOffset = -4;
+            this.rbPerempuan.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPerempuan.ForeColor = System.Drawing.Color.Black;
+            this.rbPerempuan.Location = new System.Drawing.Point(221, 10);
+            this.rbPerempuan.Name = "rbPerempuan";
+            this.rbPerempuan.Size = new System.Drawing.Size(15, 15);
+            this.rbPerempuan.TabIndex = 1;
+            this.rbPerempuan.Text = "Perempuan";
+            this.rbPerempuan.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbPerempuan.UncheckedState.BorderThickness = 2;
+            this.rbPerempuan.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbPerempuan.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(46, 253);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 19);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Jenis Kelamin";
+            // 
+            // btnSimpanPerubahan
+            // 
+            this.btnSimpanPerubahan.BorderRadius = 4;
+            this.btnSimpanPerubahan.BorderThickness = 1;
+            this.btnSimpanPerubahan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSimpanPerubahan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSimpanPerubahan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSimpanPerubahan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSimpanPerubahan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSimpanPerubahan.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnSimpanPerubahan.ForeColor = System.Drawing.Color.Black;
+            this.btnSimpanPerubahan.ImageOffset = new System.Drawing.Point(-2, 0);
+            this.btnSimpanPerubahan.Location = new System.Drawing.Point(40, 534);
+            this.btnSimpanPerubahan.Name = "btnSimpanPerubahan";
+            this.btnSimpanPerubahan.Size = new System.Drawing.Size(171, 36);
+            this.btnSimpanPerubahan.TabIndex = 49;
+            this.btnSimpanPerubahan.Text = "Simpan perubahan";
+            this.btnSimpanPerubahan.Click += new System.EventHandler(this.btnSimpanPerubahan_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(36, 8);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 18);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "Laki-laki";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(242, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(89, 18);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "Perempuan";
             // 
             // Pendaftaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 679);
+            this.Controls.Add(this.btnSimpanPerubahan);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.guna2ShadowPanel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cmbDokter);
             this.Controls.Add(this.label9);
@@ -484,6 +599,8 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.guna2ShadowPanel2.ResumeLayout(false);
+            this.guna2ShadowPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,5 +632,12 @@ namespace App_RumahSakit
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2ComboBox cmbDokter;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rbPerempuan;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rbLakiLaki;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btnSimpanPerubahan;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label6;
     }
 }

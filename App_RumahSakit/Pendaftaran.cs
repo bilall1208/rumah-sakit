@@ -23,6 +23,7 @@ namespace App_RumahSakit
             LoadDokter();
             LoadAntrian();
             dtpTTL.Value = DateTime.Now;
+            rbLakiLaki.Checked = true;
         }
 
         private void LoadPoli()
@@ -69,6 +70,14 @@ namespace App_RumahSakit
                     if (row["TglLahir"] != DBNull.Value)
                         dtpTTL.Value = Convert.ToDateTime(row["TglLahir"]);
 
+                    string jk = row["JenisKelamin"].ToString();
+                    if (jk == "P")
+                        rbPerempuan.Checked = true;
+                    else
+                        rbLakiLaki.Checked = true;
+
+                    btnSimpanPerubahan.Enabled = true;
+
                     MessageBox.Show("Data pasien ditemukan.", "Info",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -100,6 +109,8 @@ namespace App_RumahSakit
             dtpTTL.Value = DateTime.Now;
             cmbPoli.SelectedIndex = -1;
             cmbDokter.SelectedIndex = -1;
+            rbLakiLaki.Checked = true;
+            btnSimpanPerubahan.Enabled = false;
         }
 
         private string GenerateNoRM()
@@ -109,7 +120,7 @@ namespace App_RumahSakit
             int nomorBaru = 1;
             if (DB.ds.Tables[0].Rows.Count > 0)
             {
-                string noRMTerakhir = DB.ds.Tables[0].Rows[0]["No_RM"].ToString(); // contoh: RM0005
+                string noRMTerakhir = DB.ds.Tables[0].Rows[0]["No_RM"].ToString();
                 string angkaSaja = noRMTerakhir.Replace("RM", "");
                 nomorBaru = int.Parse(angkaSaja) + 1;
             }
@@ -141,18 +152,21 @@ namespace App_RumahSakit
                 string noRM = Escape(txtRM.Text.Trim());
                 string nama = Escape(txtNL.Text.Trim());
                 string alamat = Escape(txtAlamat.Text.Trim());
+                string nik = Escape(txtNIK.Text.Trim());
                 string tglLahir = dtpTTL.Value.ToString("yyyy-MM-dd");
 
                 if (jumlah == 0)
                 {
+                    string jkBaru = rbPerempuan.Checked ? "P" : "L";
                     string insertQuery = "INSERT INTO Pasien (No_RM, Nama, JenisKelamin, TglLahir, Alamat, NIK) " +
-                        "VALUES ('" + noRM + "', '" + nama + "', 'L', '" + tglLahir + "', '" + alamat + "', '')";
+                        "VALUES ('" + noRM + "', '" + nama + "', '" + jkBaru + "', '" + tglLahir + "', '" + alamat + "', '" + nik + "')";
                     DB.crud(insertQuery);
                 }
                 else
                 {
-                    string updateQuery = "UPDATE Pasien SET Nama = '" + nama + "', TglLahir = '" + tglLahir +
-                        "', Alamat = '" + alamat + "' WHERE No_RM = '" + noRM + "'";
+                    string jkUpdate = rbPerempuan.Checked ? "P" : "L";
+                    string updateQuery = "UPDATE Pasien SET Nama = '" + nama + "', JenisKelamin = '" + jkUpdate +
+                        "', TglLahir = '" + tglLahir + "', Alamat = '" + alamat + "', NIK = '" + nik + "' WHERE No_RM = '" + noRM + "'";
                     DB.crud(updateQuery);
                 }
 
@@ -218,6 +232,41 @@ namespace App_RumahSakit
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnSimpanPerubahan_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtRM.Text) || string.IsNullOrWhiteSpace(txtNL.Text))
+            {
+                MessageBox.Show("Data tidak lengkap.", "Peringatan",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                string noRM = Escape(txtRM.Text.Trim());
+                string nama = Escape(txtNL.Text.Trim());
+                string nik = Escape(txtNIK.Text.Trim());
+                string alamat = Escape(txtAlamat.Text.Trim());
+                string tglLahir = dtpTTL.Value.ToString("yyyy-MM-dd");
+                string jk = rbPerempuan.Checked ? "P" : "L";
+
+                string updateQuery = "UPDATE Pasien SET Nama = '" + nama + "', NIK = '" + nik +
+                    "', JenisKelamin = '" + jk + "', TglLahir = '" + tglLahir +
+                    "', Alamat = '" + alamat + "' WHERE No_RM = '" + noRM + "'";
+                DB.crud(updateQuery);
+
+                MessageBox.Show("Data pasien berhasil diperbarui.", "Berhasil",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LoadAntrian();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal memperbarui data: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

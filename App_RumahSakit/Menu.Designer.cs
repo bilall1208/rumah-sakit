@@ -82,7 +82,7 @@ namespace App_RumahSakit
             this.btnPemeriksaan.ForeColor = System.Drawing.Color.White;
             this.btnPemeriksaan.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnPemeriksaan.Image = ((System.Drawing.Image)(resources.GetObject("btnPemeriksaan.Image")));
-            this.btnPemeriksaan.ImageOffset = new System.Drawing.Point(-15, -2);
+            this.btnPemeriksaan.ImageOffset = new System.Drawing.Point(-7, -2);
             this.btnPemeriksaan.ImageSize = new System.Drawing.Size(22, 22);
             this.btnPemeriksaan.Location = new System.Drawing.Point(0, 443);
             this.btnPemeriksaan.Margin = new System.Windows.Forms.Padding(0);
@@ -90,7 +90,7 @@ namespace App_RumahSakit
             this.btnPemeriksaan.Size = new System.Drawing.Size(183, 38);
             this.btnPemeriksaan.TabIndex = 9;
             this.btnPemeriksaan.Text = "Pemeriksaan";
-            this.btnPemeriksaan.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnPemeriksaan.TextOffset = new System.Drawing.Point(-1, 0);
             this.btnPemeriksaan.Click += new System.EventHandler(this.btnPemeriksaan_Click);
             // 
             // btnPndftrn
@@ -104,7 +104,7 @@ namespace App_RumahSakit
             this.btnPndftrn.ForeColor = System.Drawing.Color.White;
             this.btnPndftrn.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnPndftrn.Image = ((System.Drawing.Image)(resources.GetObject("btnPndftrn.Image")));
-            this.btnPndftrn.ImageOffset = new System.Drawing.Point(-15, -2);
+            this.btnPndftrn.ImageOffset = new System.Drawing.Point(-8, -2);
             this.btnPndftrn.ImageSize = new System.Drawing.Size(22, 22);
             this.btnPndftrn.Location = new System.Drawing.Point(-1, 405);
             this.btnPndftrn.Margin = new System.Windows.Forms.Padding(0);
@@ -112,7 +112,7 @@ namespace App_RumahSakit
             this.btnPndftrn.Size = new System.Drawing.Size(183, 38);
             this.btnPndftrn.TabIndex = 7;
             this.btnPndftrn.Text = "Pendaftaran";
-            this.btnPndftrn.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnPndftrn.TextOffset = new System.Drawing.Point(-2, 0);
             this.btnPndftrn.Click += new System.EventHandler(this.btnPndftrn_Click);
             // 
             // btnLprn

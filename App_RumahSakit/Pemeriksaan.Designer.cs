@@ -29,13 +29,13 @@ namespace App_RumahSakit
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pemeriksaan));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtKeluhan = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.lblTotalBiayaObat = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@ namespace App_RumahSakit
             this.txtKeluhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKeluhan.Multiline = true;
             this.txtKeluhan.Name = "txtKeluhan";
-            this.txtKeluhan.PlaceholderText = "";
+            this.txtKeluhan.PlaceholderText = "Masukan keluhan";
             this.txtKeluhan.SelectedText = "";
             this.txtKeluhan.Size = new System.Drawing.Size(222, 93);
             this.txtKeluhan.TabIndex = 39;
@@ -107,18 +107,18 @@ namespace App_RumahSakit
             // lblTotalBiayaObat
             // 
             this.lblTotalBiayaObat.AutoSize = true;
-            this.lblTotalBiayaObat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTotalBiayaObat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(251)))));
             this.lblTotalBiayaObat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalBiayaObat.Location = new System.Drawing.Point(457, 507);
             this.lblTotalBiayaObat.Name = "lblTotalBiayaObat";
-            this.lblTotalBiayaObat.Size = new System.Drawing.Size(85, 16);
+            this.lblTotalBiayaObat.Size = new System.Drawing.Size(37, 16);
             this.lblTotalBiayaObat.TabIndex = 27;
-            this.lblTotalBiayaObat.Text = "Rp. xxx.xxx";
+            this.lblTotalBiayaObat.Text = "Rp. -";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(251)))));
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 507);
             this.label4.Name = "label4";
@@ -154,27 +154,27 @@ namespace App_RumahSakit
             // 
             this.dgvResep.AllowUserToAddRows = false;
             this.dgvResep.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvResep.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgvResep.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvResep.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResep.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvResep.ColumnHeadersHeight = 35;
             this.dgvResep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResep.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvResep.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvResep.GridColor = System.Drawing.SystemColors.Control;
             this.dgvResep.Location = new System.Drawing.Point(18, 61);
             this.dgvResep.Name = "dgvResep";
@@ -230,7 +230,7 @@ namespace App_RumahSakit
             this.txtBiayaKonsultasi.Location = new System.Drawing.Point(47, 495);
             this.txtBiayaKonsultasi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBiayaKonsultasi.Name = "txtBiayaKonsultasi";
-            this.txtBiayaKonsultasi.PlaceholderText = "";
+            this.txtBiayaKonsultasi.PlaceholderText = "Contoh: 50000";
             this.txtBiayaKonsultasi.SelectedText = "";
             this.txtBiayaKonsultasi.Size = new System.Drawing.Size(460, 36);
             this.txtBiayaKonsultasi.TabIndex = 28;
@@ -281,7 +281,7 @@ namespace App_RumahSakit
             this.txtPasienTerpilih.Location = new System.Drawing.Point(47, 206);
             this.txtPasienTerpilih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPasienTerpilih.Name = "txtPasienTerpilih";
-            this.txtPasienTerpilih.PlaceholderText = "";
+            this.txtPasienTerpilih.PlaceholderText = "Pilih pasien terlebih dahulu";
             this.txtPasienTerpilih.SelectedText = "";
             this.txtPasienTerpilih.Size = new System.Drawing.Size(460, 36);
             this.txtPasienTerpilih.TabIndex = 26;
@@ -404,34 +404,34 @@ namespace App_RumahSakit
             // 
             this.dgvAntrian.AllowUserToAddRows = false;
             this.dgvAntrian.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvAntrian.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dgvAntrian.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvAntrian.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAntrian.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAntrian.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvAntrian.ColumnHeadersHeight = 35;
             this.dgvAntrian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAntrian.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAntrian.DefaultCellStyle = dataGridViewCellStyle18;
             this.dgvAntrian.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvAntrian.Location = new System.Drawing.Point(14, 22);
+            this.dgvAntrian.Location = new System.Drawing.Point(20, 18);
             this.dgvAntrian.Name = "dgvAntrian";
             this.dgvAntrian.ReadOnly = true;
             this.dgvAntrian.RowHeadersVisible = false;
             this.dgvAntrian.RowTemplate.Height = 30;
-            this.dgvAntrian.Size = new System.Drawing.Size(431, 106);
+            this.dgvAntrian.Size = new System.Drawing.Size(431, 101);
             this.dgvAntrian.TabIndex = 43;
             this.dgvAntrian.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvAntrian.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
@@ -450,11 +450,11 @@ namespace App_RumahSakit
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.dgvAntrian);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(47, 35);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(43, 35);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 4;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(460, 137);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(469, 137);
             this.guna2ShadowPanel2.TabIndex = 47;
             // 
             // txtDiagnosa
@@ -473,7 +473,7 @@ namespace App_RumahSakit
             this.txtDiagnosa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiagnosa.Multiline = true;
             this.txtDiagnosa.Name = "txtDiagnosa";
-            this.txtDiagnosa.PlaceholderText = "";
+            this.txtDiagnosa.PlaceholderText = "Masukan diagnosa";
             this.txtDiagnosa.SelectedText = "";
             this.txtDiagnosa.Size = new System.Drawing.Size(222, 93);
             this.txtDiagnosa.TabIndex = 48;
@@ -511,7 +511,7 @@ namespace App_RumahSakit
             this.Controls.Add(this.txtPasienTerpilih);
             this.Controls.Add(this.btnBatal);
             this.Name = "Pemeriksaan";
-            this.Text = "Pendaftaran";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Pemeriksaan_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
