@@ -138,6 +138,7 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(759, 547);
             this.guna2ShadowPanel1.TabIndex = 24;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // label7
             // 

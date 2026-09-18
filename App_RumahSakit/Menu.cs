@@ -108,5 +108,18 @@ namespace App_RumahSakit
             label6.Visible = true;
             label6.Text = "Pemeriksaan";
         }
+
+        private void btnFarmasi_Click(object sender, EventArgs e)
+        {
+            Farmasi FF = new Farmasi()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            KF.UntukFormBilal(FF, PNLKNTN);
+
+            label6.Visible = true;
+            label6.Text = "Farmasi";
+        }
     }
 }

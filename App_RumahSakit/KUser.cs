@@ -153,24 +153,5 @@ namespace App_RumahSakit
             bersih();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtUSER_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

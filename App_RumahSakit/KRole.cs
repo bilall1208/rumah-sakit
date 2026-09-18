@@ -126,5 +126,10 @@ namespace App_RumahSakit
                 }
             }
         }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

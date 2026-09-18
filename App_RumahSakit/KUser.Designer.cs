@@ -115,7 +115,6 @@ namespace App_RumahSakit
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 30;
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -203,7 +202,6 @@ namespace App_RumahSakit
             this.txtUSER.SelectedText = "";
             this.txtUSER.Size = new System.Drawing.Size(302, 36);
             this.txtUSER.TabIndex = 11;
-            this.txtUSER.TextChanged += new System.EventHandler(this.txtUSER_TextChanged);
             // 
             // label1
             // 
@@ -255,7 +253,6 @@ namespace App_RumahSakit
             this.label4.Size = new System.Drawing.Size(86, 19);
             this.label4.TabIndex = 19;
             this.label4.Text = "Password";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtPASS
             // 
@@ -315,9 +312,9 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 5;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.ShadowDepth = 50;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(761, 546);
             this.guna2ShadowPanel1.TabIndex = 23;
-            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // label7
             // 

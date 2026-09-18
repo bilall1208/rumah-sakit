@@ -46,6 +46,7 @@ namespace App_RumahSakit
             this.PNLKNTN = new Guna.UI2.WinForms.Guna2Panel();
             this.PNLHEAD = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnFarmasi = new Guna.UI2.WinForms.Guna2Button();
             this.PNLSIDE.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -55,6 +56,7 @@ namespace App_RumahSakit
             // 
             // PNLSIDE
             // 
+            this.PNLSIDE.Controls.Add(this.btnFarmasi);
             this.PNLSIDE.Controls.Add(this.btnPemeriksaan);
             this.PNLSIDE.Controls.Add(this.btnPndftrn);
             this.PNLSIDE.Controls.Add(this.btnLprn);
@@ -323,6 +325,28 @@ namespace App_RumahSakit
             this.label6.TabIndex = 38;
             this.label6.Text = "Nama Form";
             // 
+            // btnFarmasi
+            // 
+            this.btnFarmasi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFarmasi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFarmasi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFarmasi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFarmasi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnFarmasi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnFarmasi.ForeColor = System.Drawing.Color.White;
+            this.btnFarmasi.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnFarmasi.Image = ((System.Drawing.Image)(resources.GetObject("btnFarmasi.Image")));
+            this.btnFarmasi.ImageOffset = new System.Drawing.Point(-14, -2);
+            this.btnFarmasi.ImageSize = new System.Drawing.Size(22, 22);
+            this.btnFarmasi.Location = new System.Drawing.Point(0, 481);
+            this.btnFarmasi.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFarmasi.Name = "btnFarmasi";
+            this.btnFarmasi.Size = new System.Drawing.Size(183, 38);
+            this.btnFarmasi.TabIndex = 10;
+            this.btnFarmasi.Text = "Farmasi";
+            this.btnFarmasi.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnFarmasi.Click += new System.EventHandler(this.btnFarmasi_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,5 +388,6 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnPemeriksaan;
+        private Guna.UI2.WinForms.Guna2Button btnFarmasi;
     }
 }
