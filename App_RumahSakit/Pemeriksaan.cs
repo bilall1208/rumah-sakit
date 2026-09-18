@@ -76,9 +76,14 @@ namespace App_RumahSakit
         private void LoadObat()
         {
             DB.crud("SELECT ID_Obat, NamaObat, HargaSatuan, Stok FROM Obat ORDER BY NamaObat ASC");
+            DataRow row = DB.ds.Tables[0].NewRow();
+            row["ID_Obat"] = 0;
+            row["NamaObat"] = "-- Pilih Obat --";
+            DB.ds.Tables[0].Rows.InsertAt(row, 0);
             cmbObat.DataSource = DB.ds.Tables[0];
             cmbObat.DisplayMember = "NamaObat";
             cmbObat.ValueMember = "ID_Obat";
+            cmbObat.SelectedIndex = 0;
         }
 
         private void SiapkanTabelResep()
@@ -115,7 +120,7 @@ namespace App_RumahSakit
                 return;
             }
 
-            if (cmbObat.SelectedValue == null || string.IsNullOrWhiteSpace(txtJumlah.Text))
+            if (cmbObat.SelectedValue == null || Convert.ToInt32(cmbObat.SelectedValue) == 0 || string.IsNullOrWhiteSpace(txtJumlah.Text))
             {
                 MessageBox.Show("Pilih obat dan isi jumlah terlebih dahulu.", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);

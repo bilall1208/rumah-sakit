@@ -94,6 +94,7 @@ namespace App_RumahSakit
         private void Menu_Load(object sender, EventArgs e)
         {
             label6.Visible = false;
+            
         }
 
         private void btnPemeriksaan_Click(object sender, EventArgs e)
@@ -120,6 +121,19 @@ namespace App_RumahSakit
 
             label6.Visible = true;
             label6.Text = "Farmasi";
+        }
+
+        private void btnPembayaran_Click(object sender, EventArgs e)
+        {
+            Pembayaran FPB = new Pembayaran()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            KF.UntukFormBilal(FPB, PNLKNTN);
+
+            label6.Visible = true;
+            label6.Text = "Pembayaran";
         }
     }
 }

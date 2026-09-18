@@ -29,17 +29,21 @@ namespace App_RumahSakit
         private void LoadPoli()
         {
             cmbPoli.Items.Clear();
+            cmbPoli.Items.Add("-- Pilih Poli --");
             cmbPoli.Items.AddRange(new string[] {
                 "Poli Umum", "Poli Gigi", "Poli Anak", "Poli Kandungan", "Poli Mata"
             });
+            cmbPoli.SelectedIndex = 0;
         }
 
         private void LoadDokter()
         {
             cmbDokter.Items.Clear();
+            cmbDokter.Items.Add("-- Pilih Dokter --");
             cmbDokter.Items.AddRange(new string[] {
-                "dr. Andi Wijaya", "drg. Maya Putri", "dr. Budi Santoso, Sp.A"
+                "dr. Andi Wijaya", "drg. Maya Putri", "dr. Budi Santoso", "drg. Bilal Fahrezi"
             });
+            cmbDokter.SelectedIndex = 0;
         }
 
         private string Escape(string input)

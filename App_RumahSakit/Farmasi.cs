@@ -180,15 +180,20 @@ namespace App_RumahSakit
 
         private void LoadObatUntukStok()
         {
-            DB.crud("SELECT ID_Obat, NamaObat, Stok FROM Obat ORDER BY NamaObat ASC");
+            DB.crud("SELECT ID_Obat, NamaObat, HargaSatuan, Stok FROM Obat ORDER BY NamaObat ASC");
+            DataRow row = DB.ds.Tables[0].NewRow();
+            row["ID_Obat"] = 0;
+            row["NamaObat"] = "-- Pilih Obat --";
+            DB.ds.Tables[0].Rows.InsertAt(row, 0);
             cmbObatStok.DataSource = DB.ds.Tables[0];
             cmbObatStok.DisplayMember = "NamaObat";
             cmbObatStok.ValueMember = "ID_Obat";
+            cmbObatStok.SelectedIndex = 0;
         }
 
         private void btnTambahStok_Click(object sender, EventArgs e)
         {
-            if (cmbObatStok.SelectedValue == null || string.IsNullOrWhiteSpace(txtJumlahStok.Text))
+            if (cmbObatStok.SelectedValue == null || Convert.ToInt32(cmbObatStok.SelectedValue) == 0 || string.IsNullOrWhiteSpace(txtJumlahStok.Text))
             {
                 MessageBox.Show("Pilih obat dan isi jumlah terlebih dahulu.", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);

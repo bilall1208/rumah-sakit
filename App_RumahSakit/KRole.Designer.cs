@@ -68,7 +68,7 @@ namespace App_RumahSakit
             this.txtNMROLE.Location = new System.Drawing.Point(42, 131);
             this.txtNMROLE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNMROLE.Name = "txtNMROLE";
-            this.txtNMROLE.PlaceholderText = "";
+            this.txtNMROLE.PlaceholderText = "Masukan nama role";
             this.txtNMROLE.SelectedText = "";
             this.txtNMROLE.Size = new System.Drawing.Size(303, 36);
             this.txtNMROLE.TabIndex = 0;
@@ -109,7 +109,7 @@ namespace App_RumahSakit
             this.txtKET.Location = new System.Drawing.Point(42, 204);
             this.txtKET.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKET.Name = "txtKET";
-            this.txtKET.PlaceholderText = "";
+            this.txtKET.PlaceholderText = "Masukan keterangan";
             this.txtKET.SelectedText = "";
             this.txtKET.Size = new System.Drawing.Size(303, 36);
             this.txtKET.TabIndex = 2;
@@ -134,7 +134,7 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(386, 34);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 5;
+            this.guna2ShadowPanel1.Radius = 3;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(759, 547);
             this.guna2ShadowPanel1.TabIndex = 24;

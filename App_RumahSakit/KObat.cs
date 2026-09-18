@@ -102,7 +102,7 @@ namespace App_RumahSakit
             string hs = txtHRGST.Text;
             string stk = txtSTK.Text;
 
-            if (txtNO.Text == "" || cmbSTUAN.SelectedIndex == -1 || txtHRGST.Text == "" || txtSTK.Text == "" )
+            if (txtNO.Text == "" || cmbSTUAN.SelectedIndex == 0 || txtHRGST.Text == "" || txtSTK.Text == "" )
             {
                 MessageBox.Show("Semua field harus diisi!", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -119,11 +119,13 @@ namespace App_RumahSakit
         private void KObat_Load(object sender, EventArgs e)
         {
             cmbSTUAN.Items.Clear();
+            cmbSTUAN.Items.Add("-- Pilih Satuan --");
             cmbSTUAN.Items.Add("Kaplet");
             cmbSTUAN.Items.Add("Kapsul");
             cmbSTUAN.Items.Add("Tablet");
             cmbSTUAN.Items.Add("Strip");
             cmbSTUAN.Items.Add("Botol");
+            cmbSTUAN.SelectedIndex = 0;
             tampildata();
         }
     }

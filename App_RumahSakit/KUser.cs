@@ -99,7 +99,7 @@ namespace App_RumahSakit
             string knfr = txtKNFRPW.Text;
             int selectedRoleId = Convert.ToInt32(cmbROLE.SelectedValue);
 
-            if (nm == "" || usr == "" || pass == "" || knfr == "" || cmbROLE.SelectedIndex == -1)
+            if (nm == "" || usr == "" || pass == "" || knfr == "" || cmbROLE.SelectedIndex == 0)
             {
                 MessageBox.Show("Semua field harus diisi!", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -124,10 +124,16 @@ namespace App_RumahSakit
             {
                 DB.crud("SELECT role_id, nama_role FROM role");
 
-                cmbROLE.DataSource = DB.ds.Tables[0];
+                DataRow row = DB.ds.Tables[0].NewRow();
+                row["role_id"] = 0;  
+                row["nama_role"] = "-- Pilih Role --"; 
 
+                DB.ds.Tables[0].Rows.InsertAt(row, 0);
+
+                cmbROLE.DataSource = DB.ds.Tables[0];
                 cmbROLE.DisplayMember = "nama_role";
                 cmbROLE.ValueMember = "role_id";
+                cmbROLE.SelectedIndex = 0;
             }
             catch (Exception ex)
             {

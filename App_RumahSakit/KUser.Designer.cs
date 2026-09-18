@@ -29,9 +29,9 @@ namespace App_RumahSakit
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KUser));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,17 +67,17 @@ namespace App_RumahSakit
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridView1.ColumnHeadersHeight = 35;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -88,14 +88,14 @@ namespace App_RumahSakit
             this.Column7,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.guna2DataGridView1.Location = new System.Drawing.Point(36, 84);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -198,7 +198,7 @@ namespace App_RumahSakit
             this.txtUSER.Location = new System.Drawing.Point(40, 168);
             this.txtUSER.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUSER.Name = "txtUSER";
-            this.txtUSER.PlaceholderText = "";
+            this.txtUSER.PlaceholderText = "Masukan username";
             this.txtUSER.SelectedText = "";
             this.txtUSER.Size = new System.Drawing.Size(302, 36);
             this.txtUSER.TabIndex = 11;
@@ -228,7 +228,7 @@ namespace App_RumahSakit
             this.txtNL.Location = new System.Drawing.Point(40, 93);
             this.txtNL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNL.Name = "txtNL";
-            this.txtNL.PlaceholderText = "";
+            this.txtNL.PlaceholderText = "Masukan nama lengkap";
             this.txtNL.SelectedText = "";
             this.txtNL.Size = new System.Drawing.Size(302, 36);
             this.txtNL.TabIndex = 9;
@@ -270,7 +270,7 @@ namespace App_RumahSakit
             this.txtPASS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPASS.Name = "txtPASS";
             this.txtPASS.PasswordChar = '•';
-            this.txtPASS.PlaceholderText = "";
+            this.txtPASS.PlaceholderText = "Masukan password";
             this.txtPASS.SelectedText = "";
             this.txtPASS.Size = new System.Drawing.Size(302, 36);
             this.txtPASS.TabIndex = 18;
@@ -285,8 +285,10 @@ namespace App_RumahSakit
             this.cmbROLE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmbROLE.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbROLE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbROLE.IntegralHeight = false;
             this.cmbROLE.ItemHeight = 30;
             this.cmbROLE.Location = new System.Drawing.Point(40, 393);
+            this.cmbROLE.MaxDropDownItems = 4;
             this.cmbROLE.Name = "cmbROLE";
             this.cmbROLE.Size = new System.Drawing.Size(302, 36);
             this.cmbROLE.TabIndex = 20;
@@ -310,7 +312,7 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(383, 34);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 5;
+            this.guna2ShadowPanel1.Radius = 3;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 50;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(761, 546);
@@ -427,7 +429,7 @@ namespace App_RumahSakit
             this.txtKNFRPW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKNFRPW.Name = "txtKNFRPW";
             this.txtKNFRPW.PasswordChar = '•';
-            this.txtKNFRPW.PlaceholderText = "";
+            this.txtKNFRPW.PlaceholderText = "Konfirmasi password";
             this.txtKNFRPW.SelectedText = "";
             this.txtKNFRPW.Size = new System.Drawing.Size(302, 36);
             this.txtKNFRPW.TabIndex = 24;

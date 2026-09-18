@@ -31,6 +31,8 @@ namespace App_RumahSakit
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.PNLSIDE = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnPembayaran = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFarmasi = new Guna.UI2.WinForms.Guna2Button();
             this.btnPemeriksaan = new Guna.UI2.WinForms.Guna2Button();
             this.btnPndftrn = new Guna.UI2.WinForms.Guna2Button();
             this.btnLprn = new Guna.UI2.WinForms.Guna2Button();
@@ -46,7 +48,6 @@ namespace App_RumahSakit
             this.PNLKNTN = new Guna.UI2.WinForms.Guna2Panel();
             this.PNLHEAD = new Guna.UI2.WinForms.Guna2Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnFarmasi = new Guna.UI2.WinForms.Guna2Button();
             this.PNLSIDE.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -56,6 +57,7 @@ namespace App_RumahSakit
             // 
             // PNLSIDE
             // 
+            this.PNLSIDE.Controls.Add(this.btnPembayaran);
             this.PNLSIDE.Controls.Add(this.btnFarmasi);
             this.PNLSIDE.Controls.Add(this.btnPemeriksaan);
             this.PNLSIDE.Controls.Add(this.btnPndftrn);
@@ -72,6 +74,50 @@ namespace App_RumahSakit
             this.PNLSIDE.Name = "PNLSIDE";
             this.PNLSIDE.Size = new System.Drawing.Size(181, 749);
             this.PNLSIDE.TabIndex = 1;
+            // 
+            // btnPembayaran
+            // 
+            this.btnPembayaran.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPembayaran.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPembayaran.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPembayaran.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPembayaran.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnPembayaran.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnPembayaran.ForeColor = System.Drawing.Color.White;
+            this.btnPembayaran.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnPembayaran.Image = ((System.Drawing.Image)(resources.GetObject("btnPembayaran.Image")));
+            this.btnPembayaran.ImageOffset = new System.Drawing.Point(-8, -2);
+            this.btnPembayaran.ImageSize = new System.Drawing.Size(22, 22);
+            this.btnPembayaran.Location = new System.Drawing.Point(0, 519);
+            this.btnPembayaran.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPembayaran.Name = "btnPembayaran";
+            this.btnPembayaran.Size = new System.Drawing.Size(183, 38);
+            this.btnPembayaran.TabIndex = 11;
+            this.btnPembayaran.Text = "Pembayaran";
+            this.btnPembayaran.TextOffset = new System.Drawing.Point(-2, 0);
+            this.btnPembayaran.Click += new System.EventHandler(this.btnPembayaran_Click);
+            // 
+            // btnFarmasi
+            // 
+            this.btnFarmasi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFarmasi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFarmasi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFarmasi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFarmasi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnFarmasi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnFarmasi.ForeColor = System.Drawing.Color.White;
+            this.btnFarmasi.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnFarmasi.Image = ((System.Drawing.Image)(resources.GetObject("btnFarmasi.Image")));
+            this.btnFarmasi.ImageOffset = new System.Drawing.Point(-14, -2);
+            this.btnFarmasi.ImageSize = new System.Drawing.Size(22, 22);
+            this.btnFarmasi.Location = new System.Drawing.Point(0, 481);
+            this.btnFarmasi.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFarmasi.Name = "btnFarmasi";
+            this.btnFarmasi.Size = new System.Drawing.Size(183, 38);
+            this.btnFarmasi.TabIndex = 10;
+            this.btnFarmasi.Text = "Farmasi";
+            this.btnFarmasi.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnFarmasi.Click += new System.EventHandler(this.btnFarmasi_Click);
             // 
             // btnPemeriksaan
             // 
@@ -325,28 +371,6 @@ namespace App_RumahSakit
             this.label6.TabIndex = 38;
             this.label6.Text = "Nama Form";
             // 
-            // btnFarmasi
-            // 
-            this.btnFarmasi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFarmasi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFarmasi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFarmasi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFarmasi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnFarmasi.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnFarmasi.ForeColor = System.Drawing.Color.White;
-            this.btnFarmasi.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
-            this.btnFarmasi.Image = ((System.Drawing.Image)(resources.GetObject("btnFarmasi.Image")));
-            this.btnFarmasi.ImageOffset = new System.Drawing.Point(-14, -2);
-            this.btnFarmasi.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnFarmasi.Location = new System.Drawing.Point(0, 481);
-            this.btnFarmasi.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFarmasi.Name = "btnFarmasi";
-            this.btnFarmasi.Size = new System.Drawing.Size(183, 38);
-            this.btnFarmasi.TabIndex = 10;
-            this.btnFarmasi.Text = "Farmasi";
-            this.btnFarmasi.TextOffset = new System.Drawing.Point(-9, 0);
-            this.btnFarmasi.Click += new System.EventHandler(this.btnFarmasi_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,5 +413,6 @@ namespace App_RumahSakit
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnPemeriksaan;
         private Guna.UI2.WinForms.Guna2Button btnFarmasi;
+        private Guna.UI2.WinForms.Guna2Button btnPembayaran;
     }
 }
