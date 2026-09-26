@@ -59,8 +59,8 @@ namespace App_RumahSakit
                 label3.Text = BarisDipilih.Cells[0].Value.ToString();
                 txtNL.Text = BarisDipilih.Cells[1].Value.ToString();
                 txtUSER.Text = BarisDipilih.Cells[2].Value.ToString();
-                txtPASS.Text = BarisDipilih.Cells[3].Value.ToString();
-                txtKNFRPW.Text = BarisDipilih.Cells[3].Value.ToString();
+                txtPASS.Clear();
+                txtKNFRPW.Clear();
                 if (BarisDipilih.Cells[4].Value != null)
                 {
                     cmbROLE.Text = BarisDipilih.Cells[4].Value.ToString();
@@ -93,6 +93,7 @@ namespace App_RumahSakit
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            string passwordHash = DB.HashPassword(txtPASS.Text);
             string nm = txtNL.Text;
             string usr = txtUSER.Text;
             string pass = txtPASS.Text;
@@ -110,7 +111,7 @@ namespace App_RumahSakit
             }
             else
             {
-                DB.crud($"INSERT INTO user VALUES(null, '{usr}', '{pass}', '{nm}', '{selectedRoleId}')");
+                DB.crud($"INSERT INTO user VALUES(null, '{usr}', '{passwordHash}', '{nm}', '{selectedRoleId}')");
                 MessageBox.Show("User berhasil disimpan!");
             }
             tampildata();
@@ -147,13 +148,27 @@ namespace App_RumahSakit
             string pass = txtPASS.Text;
             string knfr = txtKNFRPW.Text;
 
-            if (pass != knfr)
+            if (!string.IsNullOrEmpty(pass) || !string.IsNullOrEmpty(knfr))
             {
-                MessageBox.Show("Password dan Konfirmasi Password tidak cocok!", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (pass != knfr)
+                {
+                    MessageBox.Show("Password dan Konfirmasi Password tidak cocok!", "Kesalahan",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
-            DB.crud($"UPDATE user set namalengkap = '{txtNL.Text}', username = '{txtUSER.Text}', password = '{txtPASS.Text}', role_id = '{cmbROLE.SelectedValue}' where id_user = '{label3.Text}' ");
+            if (string.IsNullOrEmpty(pass))
+            {
+                DB.crud($"UPDATE user SET namalengkap = '{txtNL.Text}', username = '{txtUSER.Text}', " +
+                        $"role_id = '{cmbROLE.SelectedValue}' WHERE id_user = '{label3.Text}'");
+            }
+            else
+            {
+                string passwordHash = DB.HashPassword(pass);
+                DB.crud($"UPDATE user SET namalengkap = '{txtNL.Text}', username = '{txtUSER.Text}', " +
+                        $"password = '{passwordHash}', role_id = '{cmbROLE.SelectedValue}' WHERE id_user = '{label3.Text}'");
+            }
             MessageBox.Show("User berhasil diperbarui!");
             tampildata();
             bersih();

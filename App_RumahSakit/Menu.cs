@@ -108,23 +108,27 @@ namespace App_RumahSakit
                     btnKUser.Visible = true;
                     btnRole.Visible = true;
                     btnKObat.Visible = true;
-                    btnLprn.Visible = true;
+                    btnLprn.Visible = false;
                     break;
 
                 case "Pendaftaran":
                     btnPndftrn.Visible = true;
+                    btnPndftrn.Top = 253;
                     break;
 
                 case "Dokter":
                     btnPemeriksaan.Visible = true;
+                    btnPemeriksaan.Top = 253;
                     break;
 
                 case "Farmasi":
                     btnFarmasi.Visible = true;
+                    btnFarmasi.Top = 253;
                     break;
 
                 case "Kasir":
                     btnPembayaran.Visible = true;
+                    btnPembayaran.Top = 253;
                     break;
             }
 

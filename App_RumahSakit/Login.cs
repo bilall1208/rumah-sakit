@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Security.Cryptography;
 
 namespace App_RumahSakit
 {
@@ -18,23 +17,10 @@ namespace App_RumahSakit
             InitializeComponent();
         }
 
-        public static string HashPassword(string password)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder sb = new StringBuilder();
-                foreach (byte b in bytes)
-                    sb.Append(b.ToString("x2"));
-                return sb.ToString();
-            }
-        }
-
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string passwordHash = HashPassword(TPASS.Text);
-            DB.crud($"SELECT * FROM user INNER JOIN role on user.role_id = role.role_id WHERE username = '{tUSER.Text}' AND password = '" + passwordHash + "' ");
+            string passwordHash = DB.HashPassword(TPASS.Text);
+            DB.crud($"SELECT * FROM user INNER JOIN role on user.role_id = role.role_id WHERE username = '{tUSER.Text}' AND password = '{passwordHash}' ");
             int cekbaris = DB.ds.Tables[0].Rows.Count;
 
             if (cekbaris == 1)
@@ -58,7 +44,7 @@ namespace App_RumahSakit
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
