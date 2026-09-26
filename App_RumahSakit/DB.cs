@@ -8,6 +8,12 @@ using System.Data;
 
 namespace App_RumahSakit
 {
+    public static class LoginInfo
+    {
+        public static string LoggedInRole;
+        public static string LoggedInNama;
+    }
+
     class DB
     {
         public static MySqlConnection koneksi = new MySqlConnection("server = 127.0.0.1; username = root; password = ; database = db_rumah_sakit");

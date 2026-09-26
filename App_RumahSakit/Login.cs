@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace App_RumahSakit
 {
@@ -17,28 +18,37 @@ namespace App_RumahSakit
             InitializeComponent();
         }
 
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        public static string HashPassword(string password)
         {
-
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder sb = new StringBuilder();
+                foreach (byte b in bytes)
+                    sb.Append(b.ToString("x2"));
+                return sb.ToString();
+            }
         }
+
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DB.crud($"SELECT * FROM user INNER JOIN role on user.role_id = role.role_id WHERE username = '{tUSER.Text}' AND password = '{TPASS.Text}'");
+            string passwordHash = HashPassword(TPASS.Text);
+            DB.crud($"SELECT * FROM user INNER JOIN role on user.role_id = role.role_id WHERE username = '{tUSER.Text}' AND password = '" + passwordHash + "' ");
             int cekbaris = DB.ds.Tables[0].Rows.Count;
+
             if (cekbaris == 1)
             {
                 DataRow baris = DB.ds.Tables[0].Rows[0];
                 string nama = "" + baris["namalengkap"];
                 string role = "" + baris["nama_role"];
 
-                if (role == "Admin")
-                {
-                    Menu MA = new Menu();
-                    MA.Show();
-                    this.Hide();
-                }
+                LoginInfo.LoggedInRole = role;
+                LoginInfo.LoggedInNama = nama;
 
+                Menu MA = new Menu();
+                MA.Show();
+                this.Hide();
             }
             else
             {

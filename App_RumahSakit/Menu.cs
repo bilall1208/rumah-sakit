@@ -17,7 +17,6 @@ namespace App_RumahSakit
             InitializeComponent();
         }
 
-
         private void btnKUser_Click(object sender, EventArgs e)
         {
             KUser KU = new KUser()
@@ -94,7 +93,41 @@ namespace App_RumahSakit
         private void Menu_Load(object sender, EventArgs e)
         {
             label6.Visible = false;
-            
+            btnKUser.Visible = false;
+            btnRole.Visible = false;
+            btnKObat.Visible = false;
+            btnLprn.Visible = false;
+            btnPndftrn.Visible = false;
+            btnPemeriksaan.Visible = false;
+            btnFarmasi.Visible = false;
+            btnPembayaran.Visible = false;
+
+            switch (LoginInfo.LoggedInRole)
+            {
+                case "Admin":
+                    btnKUser.Visible = true;
+                    btnRole.Visible = true;
+                    btnKObat.Visible = true;
+                    btnLprn.Visible = true;
+                    break;
+
+                case "Pendaftaran":
+                    btnPndftrn.Visible = true;
+                    break;
+
+                case "Dokter":
+                    btnPemeriksaan.Visible = true;
+                    break;
+
+                case "Farmasi":
+                    btnFarmasi.Visible = true;
+                    break;
+
+                case "Kasir":
+                    btnPembayaran.Visible = true;
+                    break;
+            }
+
         }
 
         private void btnPemeriksaan_Click(object sender, EventArgs e)

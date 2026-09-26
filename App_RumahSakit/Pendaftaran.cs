@@ -74,7 +74,7 @@ namespace App_RumahSakit
                     if (row["TglLahir"] != DBNull.Value)
                         dtpTTL.Value = Convert.ToDateTime(row["TglLahir"]);
 
-                    string jk = row["JenisKelamin"].ToString();
+                    string jk = row["JenisKelamin"].ToString(); 
                     if (jk == "P")
                         rbPerempuan.Checked = true;
                     else

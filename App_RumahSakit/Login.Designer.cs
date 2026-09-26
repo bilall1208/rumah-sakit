@@ -118,9 +118,9 @@ namespace App_RumahSakit
             this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.guna2Button1.Location = new System.Drawing.Point(772, 355);
+            this.guna2Button1.Location = new System.Drawing.Point(772, 369);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(266, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(266, 43);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Masuk";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -140,14 +140,14 @@ namespace App_RumahSakit
             this.TPASS.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
             this.TPASS.ForeColor = System.Drawing.Color.Black;
             this.TPASS.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TPASS.Location = new System.Drawing.Point(772, 264);
+            this.TPASS.Location = new System.Drawing.Point(772, 259);
             this.TPASS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TPASS.Name = "TPASS";
             this.TPASS.PasswordChar = '•';
             this.TPASS.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.TPASS.PlaceholderText = "Password";
             this.TPASS.SelectedText = "";
-            this.TPASS.Size = new System.Drawing.Size(266, 39);
+            this.TPASS.Size = new System.Drawing.Size(266, 43);
             this.TPASS.TabIndex = 2;
             // 
             // tUSER
@@ -171,7 +171,7 @@ namespace App_RumahSakit
             this.tUSER.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.tUSER.PlaceholderText = "Username";
             this.tUSER.SelectedText = "";
-            this.tUSER.Size = new System.Drawing.Size(266, 39);
+            this.tUSER.Size = new System.Drawing.Size(266, 43);
             this.tUSER.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -183,7 +183,6 @@ namespace App_RumahSakit
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(92, 41);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Login";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2Button2
             // 
