@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+
 
 namespace App_RumahSakit
 {
@@ -26,8 +28,6 @@ namespace App_RumahSakit
             };
             KF.UntukFormBilal(KU, PNLKNTN);
 
-            label6.Visible = true;
-            label6.Text = "Kelola User";
         }
 
         private void btnRole_Click(object sender, EventArgs e)
@@ -39,8 +39,6 @@ namespace App_RumahSakit
             };
             KF.UntukFormBilal(KR, PNLKNTN);
 
-            label6.Visible = true;
-            label6.Text = "Kelola Role";
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -56,7 +54,12 @@ namespace App_RumahSakit
 
         private void btnDshbrd_Click(object sender, EventArgs e)
         {
-
+            Dashboard DSHB = new Dashboard()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            KF.UntukFormBilal(DSHB, PNLKNTN);
         }
 
         private void btnKObat_Click(object sender, EventArgs e)
@@ -67,9 +70,6 @@ namespace App_RumahSakit
                 TopMost = true
             };
             KF.UntukFormBilal(K0, PNLKNTN);
-
-            label6.Visible = true;
-            label6.Text = "Kelola Obat";
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -86,13 +86,18 @@ namespace App_RumahSakit
             };
             KF.UntukFormBilal(FP, PNLKNTN);
 
-            label6.Visible = true;
-            label6.Text = "Pendaftaran";
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            label6.Visible = false;
+            label3.Text = "Selamat pagi, " + LoginInfo.LoggedInNama + " 👋";
+            label1.Text = "• Shift " + LoginInfo.LoggedInRole;
+            Dashboard DSHB = new Dashboard()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            KF.UntukFormBilal(DSHB, PNLKNTN);
             btnKUser.Visible = false;
             btnRole.Visible = false;
             btnKObat.Visible = false;
@@ -142,9 +147,6 @@ namespace App_RumahSakit
                 TopMost = true
             };
             KF.UntukFormBilal(FPR, PNLKNTN);
-
-            label6.Visible = true;
-            label6.Text = "Pemeriksaan";
         }
 
         private void btnFarmasi_Click(object sender, EventArgs e)
@@ -155,9 +157,6 @@ namespace App_RumahSakit
                 TopMost = true
             };
             KF.UntukFormBilal(FF, PNLKNTN);
-
-            label6.Visible = true;
-            label6.Text = "Farmasi";
         }
 
         private void btnPembayaran_Click(object sender, EventArgs e)
@@ -168,9 +167,24 @@ namespace App_RumahSakit
                 TopMost = true
             };
             KF.UntukFormBilal(FPB, PNLKNTN);
+        }
 
-            label6.Visible = true;
-            label6.Text = "Pembayaran";
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime waktuSekarang = DateTime.Now;
+
+            CultureInfo kulturIndonesia = new CultureInfo("id-ID");
+
+            string formatWaktu = waktuSekarang.ToString("dddd, dd MMMM yyyy", kulturIndonesia);
+            string formatJam = waktuSekarang.ToString("HH:mm:ss");
+
+            lblWaktu.Text = formatWaktu;
+            lblJam.Text = formatJam;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

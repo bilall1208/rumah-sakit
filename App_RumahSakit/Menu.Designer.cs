@@ -29,6 +29,7 @@ namespace App_RumahSakit
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.PNLSIDE = new Guna.UI2.WinForms.Guna2Panel();
             this.btnPembayaran = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +48,11 @@ namespace App_RumahSakit
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PNLKNTN = new Guna.UI2.WinForms.Guna2Panel();
             this.PNLHEAD = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblWaktu = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblJam = new System.Windows.Forms.Label();
             this.PNLSIDE.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -351,7 +356,10 @@ namespace App_RumahSakit
             // 
             // PNLHEAD
             // 
-            this.PNLHEAD.Controls.Add(this.label6);
+            this.PNLHEAD.Controls.Add(this.lblJam);
+            this.PNLHEAD.Controls.Add(this.lblWaktu);
+            this.PNLHEAD.Controls.Add(this.label1);
+            this.PNLHEAD.Controls.Add(this.label3);
             this.PNLHEAD.Dock = System.Windows.Forms.DockStyle.Top;
             this.PNLHEAD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
             this.PNLHEAD.Location = new System.Drawing.Point(181, 0);
@@ -359,17 +367,59 @@ namespace App_RumahSakit
             this.PNLHEAD.Size = new System.Drawing.Size(1205, 119);
             this.PNLHEAD.TabIndex = 2;
             // 
-            // label6
+            // lblWaktu
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.label6.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(36, 71);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(221, 45);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Nama Form";
+            this.lblWaktu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.lblWaktu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWaktu.ForeColor = System.Drawing.Color.White;
+            this.lblWaktu.Location = new System.Drawing.Point(9, 75);
+            this.lblWaktu.Name = "lblWaktu";
+            this.lblWaktu.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblWaktu.Size = new System.Drawing.Size(189, 24);
+            this.lblWaktu.TabIndex = 44;
+            this.lblWaktu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(194, 78);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(187, 24);
+            this.label1.TabIndex = 43;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.label3.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(6, 23);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label3.Size = new System.Drawing.Size(691, 50);
+            this.label3.TabIndex = 42;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblJam
+            // 
+            this.lblJam.AutoSize = true;
+            this.lblJam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.lblJam.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJam.ForeColor = System.Drawing.Color.White;
+            this.lblJam.Location = new System.Drawing.Point(1073, 28);
+            this.lblJam.Name = "lblJam";
+            this.lblJam.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblJam.Size = new System.Drawing.Size(90, 22);
+            this.lblJam.TabIndex = 45;
+            this.lblJam.Text = "00:00:00";
             // 
             // Menu
             // 
@@ -410,9 +460,13 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2Button btnPndftrn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btnPemeriksaan;
         private Guna.UI2.WinForms.Guna2Button btnFarmasi;
         private Guna.UI2.WinForms.Guna2Button btnPembayaran;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblWaktu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblJam;
     }
 }
