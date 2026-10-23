@@ -29,6 +29,7 @@ namespace App_RumahSakit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
@@ -70,7 +71,7 @@ namespace App_RumahSakit
             this.ClientSize = new System.Drawing.Size(1148, 749);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Dashboard";
-            this.Text = " ";
+            this.Text = resources.GetString("$this.Text");
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
