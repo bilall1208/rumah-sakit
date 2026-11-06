@@ -192,6 +192,17 @@ namespace App_RumahSakit
             CrystalReports CRPT = new CrystalReports();
             CRPT.ShowDialog();
         }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            ReportDocument rpt = new ReportDocument();
+            rpt.Load("Struk Pembayaran.rpt");
+
+            string pdfPath = Path.Combine(Path.GetTempPath(), "Struk_Pembayaran.pdf");
+            rpt.ExportToDisk(ExportFormatType.PortableDocFormat, pdfPath);
+
+            System.Diagnostics.Process.Start(pdfPath);
+        }
     }
 }
  

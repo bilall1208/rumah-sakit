@@ -186,5 +186,10 @@ namespace App_RumahSakit
         {
 
         }
+
+        private void lblWaktu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

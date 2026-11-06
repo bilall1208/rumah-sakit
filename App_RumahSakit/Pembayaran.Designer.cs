@@ -61,6 +61,7 @@ namespace App_RumahSakit
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPDF = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKunjungan)).BeginInit();
             this.SuspendLayout();
@@ -245,7 +246,7 @@ namespace App_RumahSakit
             this.btnProses.ImageOffset = new System.Drawing.Point(-2, 0);
             this.btnProses.Location = new System.Drawing.Point(57, 561);
             this.btnProses.Name = "btnProses";
-            this.btnProses.Size = new System.Drawing.Size(911, 36);
+            this.btnProses.Size = new System.Drawing.Size(740, 36);
             this.btnProses.TabIndex = 52;
             this.btnProses.Text = "Proses";
             this.btnProses.Click += new System.EventHandler(this.btnProses_Click);
@@ -494,11 +495,32 @@ namespace App_RumahSakit
             this.guna2Button1.Text = "Cetak kwitansi";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // btnPDF
+            // 
+            this.btnPDF.BorderColor = System.Drawing.Color.Gray;
+            this.btnPDF.BorderRadius = 4;
+            this.btnPDF.BorderThickness = 1;
+            this.btnPDF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPDF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPDF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPDF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPDF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPDF.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnPDF.ForeColor = System.Drawing.Color.Black;
+            this.btnPDF.ImageOffset = new System.Drawing.Point(-2, 0);
+            this.btnPDF.Location = new System.Drawing.Point(803, 561);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(165, 36);
+            this.btnPDF.TabIndex = 68;
+            this.btnPDF.Text = "Cetak PDF";
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // Pembayaran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 679);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -565,5 +587,6 @@ namespace App_RumahSakit
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnPDF;
     }
 }
