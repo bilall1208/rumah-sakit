@@ -35,40 +35,40 @@ namespace App_RumahSakit
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblPasienHariIni = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMenungguDiperiksa = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblResepMenunggu = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblSiapDibayar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.dgvKunjungan = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvResepMenunggu = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnProses = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAksi1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAksi2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKunjungan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResepMenunggu)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Shapes1
@@ -92,7 +92,7 @@ namespace App_RumahSakit
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 10;
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel1.Controls.Add(this.lblPasienHariIni);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2Shapes1);
             this.guna2Panel1.FillColor = System.Drawing.Color.Blue;
@@ -102,11 +102,45 @@ namespace App_RumahSakit
             this.guna2Panel1.TabIndex = 2;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(459, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 36);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 4;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // lblPasienHariIni
+            // 
+            this.lblPasienHariIni.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblPasienHariIni.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasienHariIni.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblPasienHariIni.Location = new System.Drawing.Point(23, 48);
+            this.lblPasienHariIni.Name = "lblPasienHariIni";
+            this.lblPasienHariIni.Size = new System.Drawing.Size(19, 36);
+            this.lblPasienHariIni.TabIndex = 3;
+            this.lblPasienHariIni.Text = "0";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 18);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(104, 20);
+            this.guna2HtmlLabel1.TabIndex = 2;
+            this.guna2HtmlLabel1.Text = "Pasien Hari Ini";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 10;
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2Panel2.Controls.Add(this.lblMenungguDiperiksa);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
             this.guna2Panel2.Controls.Add(this.guna2Shapes2);
@@ -115,6 +149,40 @@ namespace App_RumahSakit
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(508, 102);
             this.guna2Panel2.TabIndex = 3;
+            // 
+            // lblMenungguDiperiksa
+            // 
+            this.lblMenungguDiperiksa.BackColor = System.Drawing.Color.FloralWhite;
+            this.lblMenungguDiperiksa.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenungguDiperiksa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblMenungguDiperiksa.Location = new System.Drawing.Point(30, 47);
+            this.lblMenungguDiperiksa.Name = "lblMenungguDiperiksa";
+            this.lblMenungguDiperiksa.Size = new System.Drawing.Size(19, 36);
+            this.lblMenungguDiperiksa.TabIndex = 5;
+            this.lblMenungguDiperiksa.Text = "0";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(459, 11);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(38, 36);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 5;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.FloralWhite;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(30, 17);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(147, 20);
+            this.guna2HtmlLabel6.TabIndex = 4;
+            this.guna2HtmlLabel6.Text = "Menunggu Diperiksa";
             // 
             // guna2Shapes2
             // 
@@ -135,7 +203,7 @@ namespace App_RumahSakit
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BorderRadius = 10;
-            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2Panel3.Controls.Add(this.lblResepMenunggu);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel3.Controls.Add(this.guna2Shapes3);
@@ -144,6 +212,41 @@ namespace App_RumahSakit
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(508, 102);
             this.guna2Panel3.TabIndex = 3;
+            // 
+            // lblResepMenunggu
+            // 
+            this.lblResepMenunggu.BackColor = System.Drawing.Color.Honeydew;
+            this.lblResepMenunggu.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResepMenunggu.ForeColor = System.Drawing.Color.Green;
+            this.lblResepMenunggu.Location = new System.Drawing.Point(23, 49);
+            this.lblResepMenunggu.Name = "lblResepMenunggu";
+            this.lblResepMenunggu.Size = new System.Drawing.Size(19, 36);
+            this.lblResepMenunggu.TabIndex = 6;
+            this.lblResepMenunggu.Text = "0";
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(466, 11);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(29, 29);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 5;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Honeydew;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Green;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(23, 19);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(125, 20);
+            this.guna2HtmlLabel4.TabIndex = 5;
+            this.guna2HtmlLabel4.Text = "Resep Menunggu";
             // 
             // guna2Shapes3
             // 
@@ -164,7 +267,7 @@ namespace App_RumahSakit
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel4.BorderRadius = 10;
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2Panel4.Controls.Add(this.lblSiapDibayar);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel8);
             this.guna2Panel4.Controls.Add(this.guna2Shapes4);
@@ -173,6 +276,40 @@ namespace App_RumahSakit
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(508, 102);
             this.guna2Panel4.TabIndex = 3;
+            // 
+            // lblSiapDibayar
+            // 
+            this.lblSiapDibayar.BackColor = System.Drawing.Color.GhostWhite;
+            this.lblSiapDibayar.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSiapDibayar.ForeColor = System.Drawing.Color.MediumPurple;
+            this.lblSiapDibayar.Location = new System.Drawing.Point(30, 49);
+            this.lblSiapDibayar.Name = "lblSiapDibayar";
+            this.lblSiapDibayar.Size = new System.Drawing.Size(19, 36);
+            this.lblSiapDibayar.TabIndex = 7;
+            this.lblSiapDibayar.Text = "0";
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(459, 10);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(39, 29);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox4.TabIndex = 5;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.UseTransparentBackground = true;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.GhostWhite;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.MediumPurple;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(30, 19);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(95, 20);
+            this.guna2HtmlLabel8.TabIndex = 6;
+            this.guna2HtmlLabel8.Text = "Siap Dibayar";
             // 
             // guna2Shapes4
             // 
@@ -189,147 +326,10 @@ namespace App_RumahSakit
             this.guna2Shapes4.Text = "guna2Shapes4";
             this.guna2Shapes4.Zoom = 100;
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 18);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(104, 20);
-            this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "Pasien Hari Ini";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(23, 48);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(19, 36);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "0";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(459, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 36);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 4;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(459, 11);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(38, 36);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 5;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(466, 11);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(29, 29);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 5;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(459, 10);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(39, 29);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 5;
-            this.guna2PictureBox4.TabStop = false;
-            this.guna2PictureBox4.UseTransparentBackground = true;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Honeydew;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Green;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(23, 49);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(19, 36);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "0";
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Honeydew;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Green;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(23, 19);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(125, 20);
-            this.guna2HtmlLabel4.TabIndex = 5;
-            this.guna2HtmlLabel4.Text = "Resep Menunggu";
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.FloralWhite;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(30, 47);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(19, 36);
-            this.guna2HtmlLabel5.TabIndex = 5;
-            this.guna2HtmlLabel5.Text = "0";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.FloralWhite;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(30, 17);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(147, 20);
-            this.guna2HtmlLabel6.TabIndex = 4;
-            this.guna2HtmlLabel6.Text = "Menunggu Diperiksa";
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.GhostWhite;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.MediumPurple;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(30, 49);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(19, 36);
-            this.guna2HtmlLabel7.TabIndex = 7;
-            this.guna2HtmlLabel7.Text = "0";
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.GhostWhite;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.MediumPurple;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(30, 19);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(95, 20);
-            this.guna2HtmlLabel8.TabIndex = 6;
-            this.guna2HtmlLabel8.Text = "Siap Dibayar";
-            // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.dgvKunjungan);
+            this.guna2ShadowPanel1.Controls.Add(this.dgvResepMenunggu);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(49, 402);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -339,15 +339,15 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1079, 202);
             this.guna2ShadowPanel1.TabIndex = 39;
             // 
-            // dgvKunjungan
+            // dgvResepMenunggu
             // 
-            this.dgvKunjungan.AllowUserToAddRows = false;
-            this.dgvKunjungan.AllowUserToDeleteRows = false;
-            this.dgvKunjungan.AllowUserToResizeColumns = false;
-            this.dgvKunjungan.AllowUserToResizeRows = false;
+            this.dgvResepMenunggu.AllowUserToAddRows = false;
+            this.dgvResepMenunggu.AllowUserToDeleteRows = false;
+            this.dgvResepMenunggu.AllowUserToResizeColumns = false;
+            this.dgvResepMenunggu.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvKunjungan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvKunjungan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.dgvResepMenunggu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvResepMenunggu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -355,9 +355,9 @@ namespace App_RumahSakit
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKunjungan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvKunjungan.ColumnHeadersHeight = 35;
-            this.dgvKunjungan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvResepMenunggu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvResepMenunggu.ColumnHeadersHeight = 35;
+            this.dgvResepMenunggu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,25 +365,25 @@ namespace App_RumahSakit
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKunjungan.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvKunjungan.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvKunjungan.Location = new System.Drawing.Point(24, 23);
-            this.dgvKunjungan.Name = "dgvKunjungan";
-            this.dgvKunjungan.ReadOnly = true;
-            this.dgvKunjungan.RowHeadersVisible = false;
-            this.dgvKunjungan.RowTemplate.Height = 30;
-            this.dgvKunjungan.Size = new System.Drawing.Size(1030, 159);
-            this.dgvKunjungan.TabIndex = 13;
-            this.dgvKunjungan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvKunjungan.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvKunjungan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvKunjungan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvKunjungan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvKunjungan.ThemeStyle.HeaderStyle.Height = 35;
-            this.dgvKunjungan.ThemeStyle.ReadOnly = true;
-            this.dgvKunjungan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            this.dgvKunjungan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvKunjungan.ThemeStyle.RowsStyle.Height = 30;
+            this.dgvResepMenunggu.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvResepMenunggu.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvResepMenunggu.Location = new System.Drawing.Point(24, 23);
+            this.dgvResepMenunggu.Name = "dgvResepMenunggu";
+            this.dgvResepMenunggu.ReadOnly = true;
+            this.dgvResepMenunggu.RowHeadersVisible = false;
+            this.dgvResepMenunggu.RowTemplate.Height = 30;
+            this.dgvResepMenunggu.Size = new System.Drawing.Size(1030, 159);
+            this.dgvResepMenunggu.TabIndex = 13;
+            this.dgvResepMenunggu.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvResepMenunggu.ThemeStyle.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvResepMenunggu.ThemeStyle.HeaderStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvResepMenunggu.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvResepMenunggu.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvResepMenunggu.ThemeStyle.HeaderStyle.Height = 35;
+            this.dgvResepMenunggu.ThemeStyle.ReadOnly = true;
+            this.dgvResepMenunggu.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.dgvResepMenunggu.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvResepMenunggu.ThemeStyle.RowsStyle.Height = 30;
             // 
             // guna2HtmlLabel9
             // 
@@ -407,43 +407,45 @@ namespace App_RumahSakit
             this.guna2HtmlLabel10.TabIndex = 40;
             this.guna2HtmlLabel10.Text = "Aksi Cepat";
             // 
-            // btnProses
+            // btnAksi1
             // 
-            this.btnProses.BorderColor = System.Drawing.Color.Gray;
-            this.btnProses.BorderRadius = 4;
-            this.btnProses.BorderThickness = 1;
-            this.btnProses.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnProses.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnProses.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnProses.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnProses.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnProses.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnProses.ForeColor = System.Drawing.Color.Black;
-            this.btnProses.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.btnProses.Location = new System.Drawing.Point(52, 325);
-            this.btnProses.Name = "btnProses";
-            this.btnProses.Size = new System.Drawing.Size(509, 36);
-            this.btnProses.TabIndex = 53;
-            this.btnProses.Text = "+ Daftar Pasien";
+            this.btnAksi1.BorderColor = System.Drawing.Color.Gray;
+            this.btnAksi1.BorderRadius = 4;
+            this.btnAksi1.BorderThickness = 1;
+            this.btnAksi1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAksi1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAksi1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAksi1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAksi1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAksi1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAksi1.ForeColor = System.Drawing.Color.Black;
+            this.btnAksi1.ImageOffset = new System.Drawing.Point(-2, 0);
+            this.btnAksi1.Location = new System.Drawing.Point(52, 325);
+            this.btnAksi1.Name = "btnAksi1";
+            this.btnAksi1.Size = new System.Drawing.Size(509, 36);
+            this.btnAksi1.TabIndex = 53;
+            this.btnAksi1.Text = "+ Daftar Pasien";
+            this.btnAksi1.Click += new System.EventHandler(this.btnAksi1_Click);
             // 
-            // guna2Button1
+            // btnAksi2
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Button1.BorderRadius = 4;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.guna2Button1.Location = new System.Drawing.Point(617, 325);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(509, 36);
-            this.guna2Button1.TabIndex = 54;
-            this.guna2Button1.Text = "Lihat antrian";
+            this.btnAksi2.BorderColor = System.Drawing.Color.Gray;
+            this.btnAksi2.BorderRadius = 4;
+            this.btnAksi2.BorderThickness = 1;
+            this.btnAksi2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAksi2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAksi2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAksi2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAksi2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAksi2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAksi2.ForeColor = System.Drawing.Color.Black;
+            this.btnAksi2.ImageOffset = new System.Drawing.Point(-2, 0);
+            this.btnAksi2.Location = new System.Drawing.Point(617, 325);
+            this.btnAksi2.Name = "btnAksi2";
+            this.btnAksi2.Size = new System.Drawing.Size(509, 36);
+            this.btnAksi2.TabIndex = 54;
+            this.btnAksi2.Text = "Lihat antrian";
+            this.btnAksi2.Click += new System.EventHandler(this.btnAksi2_Click);
             // 
             // Dashboard
             // 
@@ -451,8 +453,8 @@ namespace App_RumahSakit
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1148, 749);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.btnProses);
+            this.Controls.Add(this.btnAksi2);
+            this.Controls.Add(this.btnAksi1);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.guna2ShadowPanel1);
@@ -461,22 +463,21 @@ namespace App_RumahSakit
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Dashboard";
-            this.Text = resources.GetString("$this.Text");
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKunjungan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResepMenunggu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,21 +494,21 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPasienHariIni;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMenungguDiperiksa;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblResepMenunggu;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSiapDibayar;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvKunjungan;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvResepMenunggu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2Button btnProses;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnAksi1;
+        private Guna.UI2.WinForms.Guna2Button btnAksi2;
     }
 }

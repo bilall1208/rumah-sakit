@@ -35,10 +35,7 @@ namespace App_RumahSakit
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.dgvKunjungan = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtBayar = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtCariKunjungan = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnProses = new Guna.UI2.WinForms.Guna2Button();
@@ -62,6 +59,9 @@ namespace App_RumahSakit
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnPDF = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCariKunjungan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKunjungan)).BeginInit();
             this.SuspendLayout();
@@ -147,24 +147,6 @@ namespace App_RumahSakit
             this.txtBayar.TabIndex = 33;
             this.txtBayar.TextChanged += new System.EventHandler(this.txtBayar_TextChanged);
             // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::App_RumahSakit.Properties.Resources.icons8_Delete_Row_32px;
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 80;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::App_RumahSakit.Properties.Resources.icons8_Edit_Row_32px;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 80;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -174,32 +156,6 @@ namespace App_RumahSakit
             this.label9.Size = new System.Drawing.Size(112, 19);
             this.label9.TabIndex = 44;
             this.label9.Text = "Rincian biaya";
-            // 
-            // txtCariKunjungan
-            // 
-            this.txtCariKunjungan.BorderRadius = 5;
-            this.txtCariKunjungan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCariKunjungan.DefaultText = "  ";
-            this.txtCariKunjungan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCariKunjungan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCariKunjungan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCariKunjungan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCariKunjungan.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCariKunjungan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCariKunjungan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtCariKunjungan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCariKunjungan.IconLeft = global::App_RumahSakit.Properties.Resources.icons8_Search_50px_3;
-            this.txtCariKunjungan.IconLeftOffset = new System.Drawing.Point(2, 0);
-            this.txtCariKunjungan.Location = new System.Drawing.Point(55, 58);
-            this.txtCariKunjungan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCariKunjungan.Name = "txtCariKunjungan";
-            this.txtCariKunjungan.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtCariKunjungan.PlaceholderText = "Cari No. RM / nama pasien";
-            this.txtCariKunjungan.SelectedText = "";
-            this.txtCariKunjungan.Size = new System.Drawing.Size(897, 36);
-            this.txtCariKunjungan.TabIndex = 48;
-            this.txtCariKunjungan.TextOffset = new System.Drawing.Point(10, 0);
-            this.txtCariKunjungan.TextChanged += new System.EventHandler(this.txtCariKunjungan_TextChanged);
             // 
             // label2
             // 
@@ -488,7 +444,7 @@ namespace App_RumahSakit
             this.guna2Button1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.guna2Button1.Location = new System.Drawing.Point(974, 561);
+            this.guna2Button1.Location = new System.Drawing.Point(803, 561);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(165, 36);
             this.guna2Button1.TabIndex = 67;
@@ -508,12 +464,56 @@ namespace App_RumahSakit
             this.btnPDF.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnPDF.ForeColor = System.Drawing.Color.Black;
             this.btnPDF.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.btnPDF.Location = new System.Drawing.Point(803, 561);
+            this.btnPDF.Location = new System.Drawing.Point(974, 561);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(165, 36);
             this.btnPDF.TabIndex = 68;
             this.btnPDF.Text = "Cetak PDF";
             this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
+            // txtCariKunjungan
+            // 
+            this.txtCariKunjungan.BorderRadius = 5;
+            this.txtCariKunjungan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCariKunjungan.DefaultText = "  ";
+            this.txtCariKunjungan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCariKunjungan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCariKunjungan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariKunjungan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCariKunjungan.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCariKunjungan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariKunjungan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtCariKunjungan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCariKunjungan.IconLeft = global::App_RumahSakit.Properties.Resources.icons8_Search_50px_3;
+            this.txtCariKunjungan.IconLeftOffset = new System.Drawing.Point(2, 0);
+            this.txtCariKunjungan.Location = new System.Drawing.Point(55, 58);
+            this.txtCariKunjungan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCariKunjungan.Name = "txtCariKunjungan";
+            this.txtCariKunjungan.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtCariKunjungan.PlaceholderText = "Cari No. RM / nama pasien";
+            this.txtCariKunjungan.SelectedText = "";
+            this.txtCariKunjungan.Size = new System.Drawing.Size(897, 36);
+            this.txtCariKunjungan.TabIndex = 48;
+            this.txtCariKunjungan.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtCariKunjungan.TextChanged += new System.EventHandler(this.txtCariKunjungan_TextChanged);
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::App_RumahSakit.Properties.Resources.icons8_Delete_Row_32px;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 80;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::App_RumahSakit.Properties.Resources.icons8_Edit_Row_32px;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 80;
             // 
             // Pembayaran
             // 

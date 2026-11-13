@@ -113,7 +113,7 @@ namespace App_RumahSakit
                     btnKUser.Visible = true;
                     btnRole.Visible = true;
                     btnKObat.Visible = true;
-                    btnLprn.Visible = false;
+                    btnLprn.Visible = true;
                     break;
 
                 case "Pendaftaran":
@@ -182,14 +182,20 @@ namespace App_RumahSakit
             lblJam.Text = formatJam;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        public void BukaFormDiPanel(Form f)
         {
-
+            f.TopLevel = false;
+            KF.UntukFormBilal(f, PNLKNTN);
         }
 
-        private void lblWaktu_Click(object sender, EventArgs e)
+        private void btnLprn_Click(object sender, EventArgs e)
         {
-
+            Laporan L = new Laporan()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            KF.UntukFormBilal(L, PNLKNTN);
         }
     }
 }

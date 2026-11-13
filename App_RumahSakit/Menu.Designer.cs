@@ -187,7 +187,8 @@ namespace App_RumahSakit
             this.btnLprn.Size = new System.Drawing.Size(183, 38);
             this.btnLprn.TabIndex = 3;
             this.btnLprn.Text = "Laporan";
-            this.btnLprn.TextOffset = new System.Drawing.Point(-9, 0);
+            this.btnLprn.TextOffset = new System.Drawing.Point(-8, 0);
+            this.btnLprn.Click += new System.EventHandler(this.btnLprn_Click);
             // 
             // btnKObat
             // 
@@ -391,7 +392,6 @@ namespace App_RumahSakit
             this.lblWaktu.Size = new System.Drawing.Size(167, 24);
             this.lblWaktu.TabIndex = 44;
             this.lblWaktu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblWaktu.Click += new System.EventHandler(this.lblWaktu_Click);
             // 
             // label1
             // 
@@ -414,7 +414,6 @@ namespace App_RumahSakit
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(691, 50);
             this.label3.TabIndex = 42;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // timer1
             // 

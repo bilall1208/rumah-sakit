@@ -271,16 +271,6 @@
         AXpDNyGg2OvdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAPVJREFUWEft
-        lTEOgkAQRdEjeChbLay8gl5CExsL9VjeSBM162d5JhQqOzsaKPYlE5iF/+dnEakKgyT8COzsoHeDnR30
-        2QbIS4DeA1xp7WDgCXBTzWntxOmC1oykM07zaMY7nqGQfKJa0dqI0wWtGUnHqnM0CWHHcjoIvTswVV2i
-        UQhHltNA5ApQI4t2iAPL3SB4G4BLVh4cN9h8h5v/EeCkGmH1mebenzyCpeoezULYstwNAu+PsD08betf
-        IMoOIGn7NdyznA5C7w7Uf0RrWhtxuqA1I+mC0zya8a4AvX+Manr9HEdo7aAvAdxgZwe9G+wKQ6aqntk2
-        CU4ZaA8pAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnDshbrd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAARxJREFUWEft
@@ -289,6 +279,16 @@
         8gTPDGw/ggKLoLo8IWMW1h/BQwtg0fKErG+AjgetZcSD1csT3vgWTqFlRxAMbVqe8NYOuHwEAYPJ6uUJ
         HeeqgfkjMAyMaG3GumT6iBg+D/b3v9bJA7RmMVagBdn9pFUSxjF0O0QCxwVasxgr0AK6j47nOWfrZX4c
         cfyrN7OYbwe0A9oB/39ADaMjjqsYvYz5KkZHHFcx2mj8oOu+AI6lvlPU1+rpAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAPVJREFUWEft
+        lTEOgkAQRdEjeChbLay8gl5CExsL9VjeSBM162d5JhQqOzsaKPYlE5iF/+dnEakKgyT8COzsoHeDnR30
+        2QbIS4DeA1xp7WDgCXBTzWntxOmC1oykM07zaMY7nqGQfKJa0dqI0wWtGUnHqnM0CWHHcjoIvTswVV2i
+        UQhHltNA5ApQI4t2iAPL3SB4G4BLVh4cN9h8h5v/EeCkGmH1mebenzyCpeoezULYstwNAu+PsD08betf
+        IMoOIGn7NdyznA5C7w7Uf0RrWhtxuqA1I+mC0zya8a4AvX+Manr9HEdo7aAvAdxgZwe9G+wKQ6aqntk2
+        CU4ZaA8pAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

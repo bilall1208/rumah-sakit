@@ -227,5 +227,10 @@ namespace App_RumahSakit
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            new Laporan("Obat Keluar").ShowDialog();
+        }
     }
 }
