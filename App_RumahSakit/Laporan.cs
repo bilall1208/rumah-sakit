@@ -40,18 +40,6 @@ namespace App_RumahSakit
             cmbJenisLaporan.SelectedItem = jenisTerkunci;
             cmbJenisLaporan.Enabled = false;
         }
-
-        private ReportDocument MuatReport(string namaFile)
-        {
-            string path = Path.Combine(Application.StartupPath, namaFile);
-            if (!File.Exists(path))
-                throw new FileNotFoundException("File report tidak ditemukan:\n" + path);
-
-            ReportDocument r = new ReportDocument();
-            r.Load(path);
-            return r;
-        }
-
         private void Laporan_Load(object sender, EventArgs e)
         {
             // Default: dari awal bulan sampai hari ini
@@ -79,7 +67,7 @@ namespace App_RumahSakit
             string tglAkhir = dtpAkhir.Value.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
 
             string query = "";
-            string namaFile = "";
+            ReportDocument laporan = null;
 
             switch (cmbJenisLaporan.SelectedItem.ToString())
             {
@@ -95,7 +83,7 @@ namespace App_RumahSakit
                         JOIN Pasien p ON k.No_RM = p.No_RM
                         WHERE DATE(k.TglKunjungan) BETWEEN '" + tglAwal + "' AND '" + tglAkhir + @"'
                         ORDER BY k.TglKunjungan ASC";
-                    namaFile = "Laporan Kunjungan.rpt";
+                    laporan = new Kunjungan_Pasien();
                     break;
 
                 case "Pembayaran":
@@ -109,7 +97,7 @@ namespace App_RumahSakit
                         JOIN Pasien p ON k.No_RM = p.No_RM
                         WHERE DATE(pb.TglBayar) BETWEEN '" + tglAwal + "' AND '" + tglAkhir + @"'
                         ORDER BY pb.TglBayar ASC";
-                    namaFile = "Laporan Pendapatan.rpt";
+                    laporan = new Laporan_Pendapatan();
                     break;
 
                 case "Obat Keluar":
@@ -128,7 +116,7 @@ namespace App_RumahSakit
                         WHERE dr.StatusResep = 'Diserahkan'
                           AND DATE(k.TglKunjungan) BETWEEN '" + tglAwal + "' AND '" + tglAkhir + @"'
                         ORDER BY o.NamaObat ASC";
-                    namaFile = "Laporan Obat Keluar.rpt";
+                    laporan = new Laporan_Obat_Keluar();
                     break;
             }
 
@@ -151,7 +139,7 @@ namespace App_RumahSakit
                     laporanAktif.Dispose();
                 }
 
-                ReportDocument laporan = MuatReport(namaFile);
+                dt.TableName = "ObatKeluar";
                 laporan.SetDataSource(dt);
                 laporanAktif = laporan;
 

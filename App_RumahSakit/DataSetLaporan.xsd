@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetLaporan" targetNamespace="http://tempuri.org/DataSetLaporan.xsd" xmlns:mstns="http://tempuri.org/DataSetLaporan.xsd" xmlns="http://tempuri.org/DataSetLaporan.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetLaporan" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetLaporan" msprop:Generator_UserDSName="DataSetLaporan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ObatKeluar" msprop:Generator_TableClassName="ObatKeluarDataTable" msprop:Generator_TableVarName="tableObatKeluar" msprop:Generator_TablePropName="ObatKeluar" msprop:Generator_RowDeletingName="ObatKeluarRowDeleting" msprop:Generator_RowChangingName="ObatKeluarRowChanging" msprop:Generator_RowEvHandlerName="ObatKeluarRowChangeEventHandler" msprop:Generator_RowDeletedName="ObatKeluarRowDeleted" msprop:Generator_UserTableName="ObatKeluar" msprop:Generator_RowChangedName="ObatKeluarRowChanged" msprop:Generator_RowEvArgName="ObatKeluarRowChangeEvent" msprop:Generator_RowClassName="ObatKeluarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NamaObat" msprop:Generator_ColumnVarNameInTable="columnNamaObat" msprop:Generator_ColumnPropNameInRow="NamaObat" msprop:Generator_ColumnPropNameInTable="NamaObatColumn" msprop:Generator_UserColumnName="NamaObat" type="xs:string" minOccurs="0" />
+              <xs:element name="JumlahObat" msprop:Generator_ColumnVarNameInTable="columnJumlahObat" msprop:Generator_ColumnPropNameInRow="JumlahObat" msprop:Generator_ColumnPropNameInTable="JumlahObatColumn" msprop:Generator_UserColumnName="JumlahObat" type="xs:int" minOccurs="0" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NamaPasien" msprop:Generator_ColumnVarNameInTable="columnNamaPasien" msprop:Generator_ColumnPropNameInRow="NamaPasien" msprop:Generator_ColumnPropNameInTable="NamaPasienColumn" msprop:Generator_UserColumnName="NamaPasien" type="xs:string" minOccurs="0" />
+              <xs:element name="TglKunjungan" msprop:Generator_ColumnVarNameInTable="columnTglKunjungan" msprop:Generator_ColumnPropNameInRow="TglKunjungan" msprop:Generator_ColumnPropNameInTable="TglKunjunganColumn" msprop:Generator_UserColumnName="TglKunjungan" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StatusResep" msprop:Generator_ColumnVarNameInTable="columnStatusResep" msprop:Generator_ColumnPropNameInRow="StatusResep" msprop:Generator_ColumnPropNameInTable="StatusResepColumn" msprop:Generator_UserColumnName="StatusResep" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
