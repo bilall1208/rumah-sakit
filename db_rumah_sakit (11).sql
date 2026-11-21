@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2026 at 10:17 AM
+-- Generation Time: Nov 21, 2026 at 01:45 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -36,6 +36,14 @@ CREATE TABLE `detailresep` (
   `StatusResep` varchar(20) DEFAULT 'Menunggu'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `detailresep`
+--
+
+INSERT INTO `detailresep` (`ID_DetailResep`, `ID_Periksa`, `ID_Obat`, `JumlahObat`, `Subtotal`, `StatusResep`) VALUES
+(11, 12, 6, 1, 12000.00, 'Diserahkan'),
+(12, 12, 4, 4, 40000.00, 'Diserahkan');
+
 -- --------------------------------------------------------
 
 --
@@ -56,10 +64,7 @@ CREATE TABLE `kunjungan` (
 --
 
 INSERT INTO `kunjungan` (`ID_Kunjungan`, `No_RM`, `Poli`, `NamaDokter`, `TglKunjungan`, `Status`) VALUES
-(1, 'RM0001', 'Poli Gigi', 'drg. Maya Putri', '2026-09-04 19:47:46', 'Menunggu'),
-(2, 'RM0001', 'Poli Umum', 'dr. Andi Wijaya', '2026-09-10 09:20:15', 'Menunggu'),
-(3, 'RM0001', 'Poli Kandungan', 'drg. Maya Putri', '2026-09-11 07:10:24', 'Menunggu'),
-(4, 'RM0002', 'Poli Kandungan', 'drg. Maya Putri', '2026-09-11 07:46:08', 'Menunggu');
+(10, 'RM0006', 'Poli Umum', 'dr. Andi Wijaya', '2026-11-13 11:03:26', 'Selesai');
 
 -- --------------------------------------------------------
 
@@ -80,8 +85,11 @@ CREATE TABLE `obat` (
 --
 
 INSERT INTO `obat` (`ID_Obat`, `NamaObat`, `Satuan`, `HargaSatuan`, `Stok`) VALUES
-(1, 'Paracetamol 500mg', 'Kaplet', 12000.00, 120),
-(2, 'Vitamin K', 'Tablet', 5000.00, 180);
+(1, 'Paracetamol 500mg', 'Kaplet', 12000.00, 118),
+(2, 'Vitamin K', 'Tablet', 5000.00, 174),
+(4, 'Vitamin C', 'Tablet', 10000.00, 121),
+(5, 'Panadol', 'Tablet', 2500.00, 150),
+(6, 'Ibuprofen', 'Kapsul', 12000.00, 108);
 
 -- --------------------------------------------------------
 
@@ -103,8 +111,12 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`No_RM`, `Nama`, `JenisKelamin`, `TglLahir`, `Alamat`, `NIK`) VALUES
-('RM0001', 'Zayyan', 'L', '2009-01-14', 'Ngamprahhhh RT99/90, Kel. Lagadar', '899789086'),
-('RM0002', 'Faiz Fadhilah', 'L', '2008-12-25', 'Cibeber FuriFjar', '');
+('RM0001', 'Zayyan', 'P', '2009-01-14', 'Ngamprah RT09/15, Kel. Paku Haji', '899789086'),
+('RM0002', 'Faiz Fadhilah', 'L', '2008-12-25', 'Cibeber, Puri  Fajar', '13542674'),
+('RM0003', 'Bilal Fahrezi', 'L', '2008-01-29', 'Cikuya, Bumiwangi RT08/15', '137702931121'),
+('RM0004', 'Mufti Subhan', 'L', '2006-07-19', 'Cibabat', '13290288492'),
+('RM0005', 'Gaza Palestina', 'L', '2026-09-18', 'Melong', '8540670435'),
+('RM0006', 'Nazran Arkan', 'L', '2009-03-13', 'Pemda II, Cibeber', '081425367');
 
 -- --------------------------------------------------------
 
@@ -121,6 +133,13 @@ CREATE TABLE `pembayaran` (
   `Kembalian` decimal(10,2) DEFAULT NULL,
   `TglBayar` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pembayaran`
+--
+
+INSERT INTO `pembayaran` (`ID_Bayar`, `ID_Kunjungan`, `Total`, `MetodeBayar`, `Bayar`, `Kembalian`, `TglBayar`) VALUES
+(2, 10, 77000.00, 'Tunai', 77000.00, 0.00, '2026-11-14 15:21:37');
 
 -- --------------------------------------------------------
 
@@ -141,9 +160,7 @@ CREATE TABLE `pemeriksaan` (
 --
 
 INSERT INTO `pemeriksaan` (`ID_Periksa`, `ID_Kunjungan`, `Keluhan`, `Diagnosa`, `BiayaKonsultasi`) VALUES
-(1, 4, 'Sakit peyut', 'Kuman di perut', 50000.00),
-(2, 4, 'Sakit jiwa', 'stressssss', 5000000.00),
-(3, 4, 'Sakit perut', 'Kuman di perut', 5000000.00);
+(12, 10, 'Sakit perut', 'Diare', 25000.00);
 
 -- --------------------------------------------------------
 
@@ -177,7 +194,7 @@ INSERT INTO `role` (`role_id`, `nama_role`, `keterangan`) VALUES
 CREATE TABLE `user` (
   `ID_User` int(11) NOT NULL,
   `Username` varchar(50) NOT NULL,
-  `Password` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `NamaLengkap` varchar(100) DEFAULT NULL,
   `role_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -186,14 +203,12 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`ID_User`, `Username`, `Password`, `NamaLengkap`, `role_id`) VALUES
-(1, 'admin', 'admin1', 'Administrator', 1),
-(2, 'rina', 'daftar123', 'Rina ', 3),
-(3, 'drandi', 'dokter123', 'Andi Soebardjo', 2),
-(4, 'sari', 'farmasi123', 'Sari ', 4),
-(5, 'dedi', 'kasir1', 'Dedi ', 5),
-(9, '123456', '12345', 'Jayan', 9),
-(10, 'bilal12', '1218', 'Bilal Fahrezi', 1);
+INSERT INTO `user` (`ID_User`, `Username`, `password`, `NamaLengkap`, `role_id`) VALUES
+(11, 'admin18', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Bilal', 1),
+(12, 'kasir18', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Rina', 5),
+(13, 'dokter18', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Andi', 2),
+(14, 'daftar18', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Kendra', 3),
+(15, 'farmasi18', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'Sintya', 4);
 
 --
 -- Indexes for dumped tables
@@ -262,31 +277,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `detailresep`
 --
 ALTER TABLE `detailresep`
-  MODIFY `ID_DetailResep` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_DetailResep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `kunjungan`
 --
 ALTER TABLE `kunjungan`
-  MODIFY `ID_Kunjungan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_Kunjungan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `obat`
 --
 ALTER TABLE `obat`
-  MODIFY `ID_Obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_Obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pembayaran`
 --
 ALTER TABLE `pembayaran`
-  MODIFY `ID_Bayar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_Bayar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pemeriksaan`
 --
 ALTER TABLE `pemeriksaan`
-  MODIFY `ID_Periksa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_Periksa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `role`
@@ -298,7 +313,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID_User` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
