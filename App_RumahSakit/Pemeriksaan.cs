@@ -120,12 +120,14 @@ namespace App_RumahSakit
                 return;
             }
 
-            if (cmbObat.SelectedValue == null || Convert.ToInt32(cmbObat.SelectedValue) == 0 || string.IsNullOrWhiteSpace(txtJumlah.Text))
+            int idx = cmbObat.FindStringExact(cmbObat.Text);
+            if (idx == -1 || string.IsNullOrWhiteSpace(txtJumlah.Text))
             {
-                MessageBox.Show("Pilih obat dan isi jumlah terlebih dahulu.", "Peringatan",
+                MessageBox.Show("Pilih obat dari daftar dan isi jumlah terlebih dahulu.", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            cmbObat.SelectedIndex = idx;
 
             if (!int.TryParse(txtJumlah.Text, out int jumlah) || jumlah <= 0)
             {

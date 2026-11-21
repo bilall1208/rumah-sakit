@@ -51,7 +51,6 @@ namespace App_RumahSakit
             this.txtPasienTerpilih = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSimpan = new Guna.UI2.WinForms.Guna2Button();
             this.btnBatal = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbObat = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvAntrian = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -61,6 +60,7 @@ namespace App_RumahSakit
             this.btnTambahResep = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cmbObat = new System.Windows.Forms.ComboBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAntrian)).BeginInit();
@@ -330,25 +330,6 @@ namespace App_RumahSakit
             this.btnBatal.Text = "Batal";
             this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
-            // cmbObat
-            // 
-            this.cmbObat.BackColor = System.Drawing.Color.Transparent;
-            this.cmbObat.BorderRadius = 5;
-            this.cmbObat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbObat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbObat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbObat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbObat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cmbObat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbObat.IntegralHeight = false;
-            this.cmbObat.ItemHeight = 30;
-            this.cmbObat.Location = new System.Drawing.Point(47, 403);
-            this.cmbObat.MaxDropDownItems = 5;
-            this.cmbObat.MaxLength = 4;
-            this.cmbObat.Name = "cmbObat";
-            this.cmbObat.Size = new System.Drawing.Size(222, 36);
-            this.cmbObat.TabIndex = 43;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -495,17 +476,33 @@ namespace App_RumahSakit
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 80;
             // 
+            // cmbObat
+            // 
+            this.cmbObat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbObat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbObat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbObat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbObat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbObat.FormattingEnabled = true;
+            this.cmbObat.IntegralHeight = false;
+            this.cmbObat.ItemHeight = 29;
+            this.cmbObat.Location = new System.Drawing.Point(47, 404);
+            this.cmbObat.MaxDropDownItems = 5;
+            this.cmbObat.Name = "cmbObat";
+            this.cmbObat.Size = new System.Drawing.Size(222, 35);
+            this.cmbObat.TabIndex = 55;
+            // 
             // Pemeriksaan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 679);
+            this.Controls.Add(this.cmbObat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtDiagnosa);
             this.Controls.Add(this.guna2ShadowPanel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.cmbObat);
             this.Controls.Add(this.btnTambahResep);
             this.Controls.Add(this.txtKeluhan);
             this.Controls.Add(this.guna2ShadowPanel1);
@@ -546,7 +543,6 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2TextBox txtPasienTerpilih;
         private Guna.UI2.WinForms.Guna2Button btnBatal;
         private Guna.UI2.WinForms.Guna2Button btnTambahResep;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbObat;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2DataGridView dgvAntrian;
@@ -556,5 +552,6 @@ namespace App_RumahSakit
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private System.Windows.Forms.Label lblTotalBiayaObat;
+        private System.Windows.Forms.ComboBox cmbObat;
     }
 }

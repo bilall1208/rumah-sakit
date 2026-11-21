@@ -193,12 +193,14 @@ namespace App_RumahSakit
 
         private void btnTambahStok_Click(object sender, EventArgs e)
         {
-            if (cmbObatStok.SelectedValue == null || Convert.ToInt32(cmbObatStok.SelectedValue) == 0 || string.IsNullOrWhiteSpace(txtJumlahStok.Text))
+            int idx = cmbObatStok.FindStringExact(cmbObatStok.Text);
+            if (idx == -1 || string.IsNullOrWhiteSpace(txtJumlahStok.Text))
             {
-                MessageBox.Show("Pilih obat dan isi jumlah terlebih dahulu.", "Peringatan",
+                MessageBox.Show("Pilih obat dari daftar dan isi jumlah terlebih dahulu.", "Peringatan",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            cmbObatStok.SelectedIndex = idx; 
 
             if (!int.TryParse(txtJumlahStok.Text, out int jumlah) || jumlah <= 0)
             {

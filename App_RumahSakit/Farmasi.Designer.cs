@@ -44,7 +44,6 @@ namespace App_RumahSakit
             this.txtJumlahStok = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblPasienTerpilih = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTambahStok = new Guna.UI2.WinForms.Guna2Button();
-            this.cmbObatStok = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dgvResepMenunggu = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -55,6 +54,7 @@ namespace App_RumahSakit
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbObatStok = new System.Windows.Forms.ComboBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetailResep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResepMenunggu)).BeginInit();
@@ -232,24 +232,6 @@ namespace App_RumahSakit
             this.btnTambahStok.TabIndex = 30;
             this.btnTambahStok.Text = "Tambah";
             this.btnTambahStok.Click += new System.EventHandler(this.btnTambahStok_Click);
-            // 
-            // cmbObatStok
-            // 
-            this.cmbObatStok.BackColor = System.Drawing.Color.Transparent;
-            this.cmbObatStok.BorderRadius = 5;
-            this.cmbObatStok.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbObatStok.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbObatStok.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbObatStok.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbObatStok.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cmbObatStok.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbObatStok.IntegralHeight = false;
-            this.cmbObatStok.ItemHeight = 30;
-            this.cmbObatStok.Location = new System.Drawing.Point(47, 509);
-            this.cmbObatStok.MaxDropDownItems = 4;
-            this.cmbObatStok.Name = "cmbObatStok";
-            this.cmbObatStok.Size = new System.Drawing.Size(222, 36);
-            this.cmbObatStok.TabIndex = 43;
             // 
             // label9
             // 
@@ -436,11 +418,28 @@ namespace App_RumahSakit
             this.guna2Button1.Text = "Cetak laporan";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // cmbObatStok
+            // 
+            this.cmbObatStok.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbObatStok.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbObatStok.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbObatStok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbObatStok.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbObatStok.FormattingEnabled = true;
+            this.cmbObatStok.IntegralHeight = false;
+            this.cmbObatStok.ItemHeight = 29;
+            this.cmbObatStok.Location = new System.Drawing.Point(47, 509);
+            this.cmbObatStok.MaxDropDownItems = 5;
+            this.cmbObatStok.Name = "cmbObatStok";
+            this.cmbObatStok.Size = new System.Drawing.Size(222, 35);
+            this.cmbObatStok.TabIndex = 54;
+            // 
             // Farmasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 679);
+            this.Controls.Add(this.cmbObatStok);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnSerahkanObat);
             this.Controls.Add(this.btnRefresh);
@@ -448,7 +447,6 @@ namespace App_RumahSakit
             this.Controls.Add(this.txtCariResep);
             this.Controls.Add(this.guna2ShadowPanel2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.cmbObatStok);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtJumlahStok);
@@ -476,7 +474,6 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2Button btnTambahStok;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private Guna.UI2.WinForms.Guna2TextBox lblPasienTerpilih;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbObatStok;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2DataGridView dgvResepMenunggu;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
@@ -488,5 +485,6 @@ namespace App_RumahSakit
         private Guna.UI2.WinForms.Guna2Button btnRefresh;
         private Guna.UI2.WinForms.Guna2Button btnSerahkanObat;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ComboBox cmbObatStok;
     }
 }
